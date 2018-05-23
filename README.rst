@@ -1,4 +1,4 @@
-Repository for ECan freshwater reports
+Repository for basic python
 =============================================================
 
-This git repository contains the documentation for the `ECan freshwater reports <http://ecan-water-reports.readthedocs.io/en/latest/index.html>`_.
+This git repository contains the introduction to python developed for New Zealand Regional Councils

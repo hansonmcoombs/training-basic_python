@@ -19,7 +19,7 @@ a bit different for longs, 99% of the time it makes no difference and you can co
 Floats on the other hand are numbers with a decimal point.  We won't really talk about complex numbers here, but if you
 are really keen, have a look at {#todo find a complex number option to link to}
 
-.. ipython:: python
+.. code:: python
 
     type(1)
     type(1000000000000000)
@@ -28,7 +28,7 @@ are really keen, have a look at {#todo find a complex number option to link to}
 
 There are a number of operations that you can do with numeric values:
 
-.. ipython:: python
+.. code:: python
 
     x = 2
     y = 3.5
@@ -55,7 +55,7 @@ but it will change the type if needed (e.g. from int to float).
 3. Floored means always towards - infinity so -1.1 floored is -2 and 1.9 floored is 1.
 4. Order of operation applies to mathematical formulas in python as normal so:
 
-.. ipython:: python
+.. code:: python
 
     5 / (3 + 2)
     4 ** (1 / 2)
@@ -67,7 +67,7 @@ Boolean
 A boolean value in python is either True or False as with numeric data there a several basic operations that can
 be preformed on boolean data
 
-.. ipython:: python
+.. code:: python
 
     True or False
     True or True
@@ -80,14 +80,14 @@ be preformed on boolean data
 
 order of operations also applies to boolean operations, so:
 
-.. ipython:: python
+.. code:: python
 
     True and (True or False)
     False or (True and False)
 
 boolean values can be converted to integers and floats
 
-.. ipython:: python
+.. code:: python
 
     int(True)
     int(False)
@@ -99,7 +99,7 @@ Strings
 Strings are made up of different characters (e.g. a, b, c, %, &, ?, etc.).  Every sentence ever written can be
 considered as a string. You can make strings in a number of ways by wrapping characters ' and " so for example:
 
-.. ipython:: python
+.. code:: python
     x = 'my string'
     y = "also my string"
     z = "my string can contain quotes 'like this one'"
@@ -133,7 +133,7 @@ up to now in order to see the contents of a variable we have simply been calling
 interactive python environment, but when running a python script from start to finish you need the print function.
 print function is easy to use and will simply print the variable.  so for instance:
 
-.. ipython:: python
+.. code:: python
 
     x = 'some string'
     print(x)

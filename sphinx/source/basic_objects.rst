@@ -23,8 +23,7 @@ are really keen, have a look at {#todo find a complex number option to link to}
 
 .. ipython:: python
 
-    # test
-    type(1)
+    type(1)  # test
     type(1000000000000000)
     type(3.1415)
     type(3.)

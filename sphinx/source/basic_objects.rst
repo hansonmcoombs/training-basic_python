@@ -19,7 +19,7 @@ a bit different for longs, 99% of the time it makes no difference and you can co
 Floats on the other hand are numbers with a decimal point.  We won't really talk about complex numbers here, but if you
 are really keen, have a look at {#todo find a complex number option to link to}
 
-.. code:: python
+.. ipython:: python
 
     type(1)
     type(1000000000000000)

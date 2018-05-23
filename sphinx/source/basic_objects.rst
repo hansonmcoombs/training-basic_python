@@ -30,7 +30,7 @@ are really keen, have a look at {#todo find a complex number option to link to}
 
 There are a number of operations that you can do with numeric values:
 
-.. ipython:: python
+.. code:: python
 
     x = 2
     y = 3.5
@@ -57,7 +57,7 @@ but it will change the type if needed (e.g. from int to float).
 3. Floored means always towards - infinity so -1.1 floored is -2 and 1.9 floored is 1.
 4. Order of operation applies to mathematical formulas in python as normal so:
 
-.. code:: python
+.. ipython:: python
 
     5 / (3 + 2)
     4 ** (1 / 2)

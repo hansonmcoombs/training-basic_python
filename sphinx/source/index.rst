@@ -10,8 +10,9 @@ introduce them to the basics of raw python as well as familiarise them with seve
    :maxdepth: 2
    :caption: Python Basics
 
-    whatpython
-    basic_objects
+    what_python
+    the_list
+    string_details
 
 
 

@@ -1,12 +1,6 @@
 Basic Python Objects, Variables, and Operators
 ==============================================
 
-.. toctree::
-   :maxdepth: 1
-   :caption: prerequisites
-
-    whatpython
-
 
 Variables
 ------------

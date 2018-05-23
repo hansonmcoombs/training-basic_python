@@ -12,11 +12,6 @@ introduce them to the basics of raw python as well as familiarise them with seve
 
     whatpython
     basic_objects
-    the_list
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Useful builtin packages (coming)
 
 
 

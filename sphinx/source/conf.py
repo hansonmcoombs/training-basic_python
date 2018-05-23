@@ -88,9 +88,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'ECan Freshwater Reports'
+project = 'ECan Introduction to Python'
 copyright = '2018 ECan'
-author = 'Mike Kittridge'
+author = 'Matt Hanson'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -179,7 +179,7 @@ html_context = {
     'display_github': True,
     # Set the following variables to generate the resulting github URL for each page.
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
-    'github_user': 'mullenkamp',
+    'github_user': 'hansonmcoombs',
     'github_repo': 'master',
     'github_version': 'master/source/'
 }

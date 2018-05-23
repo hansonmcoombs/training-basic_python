@@ -152,5 +152,3 @@ print function is easy to use and will simply print the variable.  so for instan
     print(x)
 
     print(1,1,2,2,3)
-
-#todo

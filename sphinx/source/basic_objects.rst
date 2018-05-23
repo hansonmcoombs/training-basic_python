@@ -57,7 +57,7 @@ but it will change the type if needed (e.g. from int to float).
 3. Floored means always towards - infinity so -1.1 floored is -2 and 1.9 floored is 1.
 4. Order of operation applies to mathematical formulas in python as normal so:
 
-.. ipython:: python
+.. code:: python
 
     5 / (3 + 2)
     4 ** (1 / 2)
@@ -69,7 +69,7 @@ Boolean
 A boolean value in python is either True or False as with numeric data there a several basic operations that can
 be preformed on boolean data
 
-.. code:: python
+.. ipython:: python
 
     True or False
     True or True

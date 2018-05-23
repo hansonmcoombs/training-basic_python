@@ -30,7 +30,7 @@ are really keen, have a look at {#todo find a complex number option to link to}
 
 There are a number of operations that you can do with numeric values:
 
-.. code:: python
+.. ipython:: python
 
     x = 2
     y = 3.5
@@ -42,7 +42,6 @@ There are a number of operations that you can do with numeric values:
     z // x  # (floored) quotient of z and x	(3)
     z % x  # remainder of z / x	(4)
     -x  # x negated
-    +x  # x unchanged
     abs(z)  # absolute value or magnitude of z
     int(y)  # y converted to integer
     long(y)  # y converted to long integer

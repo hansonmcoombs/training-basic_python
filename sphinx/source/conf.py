@@ -52,6 +52,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
 	#'rst2pdf.pdfbuilder',
+    'numpydoc',
 
     # IPython console
     'IPython.sphinxext.ipython_console_highlighting',

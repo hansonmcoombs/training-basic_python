@@ -68,7 +68,7 @@ Boolean
 A boolean value in python is either True or False as with numeric data there a several basic operations that can
 be preformed on boolean data
 
-.. ipython::python
+.. ipython:: python
 
     True or False
     True or True
@@ -82,14 +82,14 @@ be preformed on boolean data
 
 order of operations also applies to boolean operations, so:
 
-.. ipython::python
+.. ipython:: python
 
     True and (True or False)
     False or (True and False)
 
 boolean values can be converted to integers and floats
 
-.. ipython::python:
+.. ipython:: python
     int(True)
     int(False)
 
@@ -100,7 +100,7 @@ Strings
 Strings are made up of different characters (e.g. a, b, c, %, &, ?, etc.).  Every sentence ever written can be
 considered as a string. You can make strings in a number of ways by wrapping characters ' and " so for example:
 
-.. ipython::python
+.. ipython:: python
     x = 'my string'
     y = "also my string"
     z = "my string can contain quotes 'like this one'"
@@ -126,8 +126,8 @@ considered as a string. You can make strings in a number of ways by wrapping cha
     float(x)
 
     # though python isn't smart enough to convert everything to a numeric value and throws an exception
-    x = 'five'
-    int(x)
+    #x = 'five'
+    #int(x)
 
 
 There are many different operators and ways to manage strings, for more information please see # link to string details
@@ -140,7 +140,7 @@ up to now in order to see the contents of a variable we have simply been calling
 interactive python environment, but when running a python script from start to finish you need the print function.
 print function is easy to use and will simply print the variable.  so for instance:
 
-.. ipython::python
+.. ipython:: python
 
     x = 'some string'
     print(x)

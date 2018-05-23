@@ -20,6 +20,8 @@
 import os
 import sys
 
+project_name = 'basic python'
+
 # !! These do not work when reading files with IPython !!
 # The data files needs to be located at the root of the repository
 
@@ -45,22 +47,39 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    #'sphinx.ext.mathjax',
-    'sphinx.ext.ifconfig',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages',
+    # 'sphinx.ext.coverage',
+    # 'sphinx.ext.mathjax',
+    # 'sphinx.ext.ifconfig',
+    # 'sphinx.ext.viewcode',
+    # 'sphinx.ext.githubpages',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.napoleon',
+    # 'sphinx_gallery.gen_gallery',
 	#'rst2pdf.pdfbuilder',
     'numpydoc',
 
     # IPython console
     'IPython.sphinxext.ipython_console_highlighting',
-    'IPython.sphinxext.ipython_directive',
+    'IPython.sphinxext.ipython_directive'
 
     # Enable Google Analytics ( requires: https://pypi.python.org/pypi/sphinxcontrib-googleanalytics )
     #'sphinxcontrib.googleanalytics',
 ]
+
+autosummary_generate = True
+
+# Sphinx gallery configuration
+# sphinx_gallery_conf = {
+#     'examples_dirs': ['../../examples'],
+#     'filename_pattern': '^((?!sgskip).)*$',
+#     'gallery_dirs': ['gallery'],
+#     'doc_module': ('pdsql',),
+#     'reference_url': {'matplotlib': 'http://matplotlib.org',
+#                       'numpy': 'http://docs.scipy.org/doc/numpy/reference',
+#                       'scipy': 'http://docs.scipy.org/doc/scipy/reference',
+#                       'geopandas': None},
+#     'backreferences_dir': 'reference'
+# }
 
 # index - master document
 # rst2pdf - name of the generated pdf
@@ -71,6 +90,9 @@ extensions = [
 # Google Analytics ID to enable tracking of site traffic
 #googleanalytics_id = "UA-103385820-1"
 #googleanalytics_enabled = True
+
+# Fix issue with warnings from numpydoc (see discussion in PR #534)
+numpydoc_show_class_members = False
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -89,8 +111,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'ECan Introduction to Python'
-copyright = '2018 ECan'
+project = project_name
+copyright = '2018 Matt Hanson'
 author = 'Matt Hanson'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -107,7 +129,7 @@ release = '1.0.1'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'Python'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -152,7 +174,7 @@ pygments_style = 'sphinx'
 # keep_warnings = False
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
+# todo_include_todos = True
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -173,17 +195,17 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 #
 #html_theme_options = {}
 
-extrafooter = "TEST TEXT"
+extrafooter = ""
 
-html_context = {
-    # Enable the "Edit in GitHub link within the header of each page.
-    'display_github': True,
-    # Set the following variables to generate the resulting github URL for each page.
-    # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
-    'github_user': 'hansonmcoombs',
-    'github_repo': 'master',
-    'github_version': 'master/source/'
-}
+# html_context = {
+#     # Enable the "Edit in GitHub link within the header of each page.
+#     'display_github': True,
+#     # Set the following variables to generate the resulting github URL for each page.
+#     'Format Template': 'https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}',
+#     'github_user': 'mullenkamp',
+#     'github_repo': 'master',
+#     'github_version': 'master/source/'
+# }
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
@@ -291,7 +313,7 @@ html_last_updated_fmt = ""
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'ECan-freshwater'
+htmlhelp_basename = project_name
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -317,8 +339,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'ECan-freshwater.tex', 'ECan-freshwater Documentation',
-     'Mike Kittridge', 'manual'),
+    (master_doc, project_name + '.tex', project_name + ' Documentation',
+     author, 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -359,7 +381,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ecanfreshwater', 'ECan-freshwater Documentation',
+    (master_doc, project_name, project_name + ' Documentation',
      [author], 1)
 ]
 
@@ -374,8 +396,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'ECan-freshwater', 'ECan-freshwater Documentation',
-     author, 'ECan-freshwater', 'One line description of project.',
+    (master_doc, project_name, project_name + ' Documentation',
+     author, project_name, 'One line description of project.',
      'Miscellaneous'),
 ]
 

@@ -102,6 +102,7 @@ Strings are made up of different characters (e.g. a, b, c, %, &, ?, etc.).  Ever
 considered as a string. You can make strings in a number of ways by wrapping characters ' and " so for example:
 
 .. code:: python
+
     x = 'my string'
     y = "also my string"
     z = "my string can contain quotes 'like this one'"

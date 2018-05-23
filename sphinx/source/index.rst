@@ -7,8 +7,8 @@ introduce them to the basics of raw python as well as familiarise them with seve
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Python Basics
+    :maxdepth: 2
+    :caption: Python Basics
 
     what_python.rst
     basic_objects.rst

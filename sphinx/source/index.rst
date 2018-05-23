@@ -2,9 +2,8 @@
 Welcome to ECan's introduction to python course
 ===========================================
 
-This course is aimed at people who have no familiarity with the python programming language and introduce them to the
-basics of raw python as well as familiarise them with several useful builtin packages.  This course assumes that you
-have successfully installed python on your own machine. To get assistance with this please see #todo add link to python intallation page
+This course is aimed at people who have no familiarity with the python programming language teach them to install python
+introduce them to the basics of raw python as well as familiarise them with several useful builtin packages.
 
 
 .. toctree::

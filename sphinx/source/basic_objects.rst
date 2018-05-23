@@ -69,7 +69,7 @@ Boolean
 A boolean value in python is either True or False as with numeric data there a several basic operations that can
 be preformed on boolean data
 
-.. code:: python
+.. ipython:: python
 
     True or False
     True or True
@@ -89,7 +89,7 @@ order of operations also applies to boolean operations, so:
 
 boolean values can be converted to integers and floats
 
-.. code:: python
+.. ipython:: python
 
     int(True)
     int(False)
@@ -136,7 +136,7 @@ up to now in order to see the contents of a variable we have simply been calling
 interactive python environment, but when running a python script from start to finish you need the print function.
 print function is easy to use and will simply print the variable.  so for instance:
 
-.. code:: python
+.. ipython:: python
 
     x = 'some string'
     print(x)

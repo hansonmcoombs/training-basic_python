@@ -5,7 +5,7 @@ Basic Python Objects, Variables, and Operators
    :maxdepth: 1
    :caption: prerequisites
 
-   whatpython
+    whatpython
 
 
 Variables
@@ -55,10 +55,10 @@ There are a number of operations that you can do with numeric values:
     z ** x  # z to the power x
 
 some notes on these operations:
+
 1. You can mix numeric types. Where possible python tries to maintain the numeric type throughout the operation,
 but it will change the type if needed (e.g. from int to float).
-2. The behaviour of division in python 2.7 is different to python 3.6.  This course assumes python 3.6 see more
- `here <http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html#python-2-1>`_.
+2. The behaviour of division in python 2.7 is different to python 3.6.  This course assumes python 3.6 see more `here <http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html#python-2-1>`_.
 3. Floored means always towards - infinity so -1.1 floored is -2 and 1.9 floored is 1.
 4. Order of operation applies to mathematical formulas in python as normal so:
 
@@ -93,13 +93,18 @@ order of operations also applies to boolean operations, so:
     True and (True or False)
     False or (True and False)
 
+boolean values can be converted to integers and floats
+
+.. ipython::python:
+    int(True)
+    int(False)
 
 
 Strings
 ---------
 
-Strings are made up of different characters.  Every sentence can be considered as a string. you can make strings in a
-number of ways with
+Strings are made up of different characters (e.g. a, b, c, %, &, ?, etc.).  Every sentence ever written can be
+considered as a string. You can make strings in a number of ways by wrapping characters ' and " so for example:
 
 .. ipython::python
     x = 'my string'
@@ -137,5 +142,15 @@ There are many different operators and ways to manage strings, for more informat
 The print function
 -------------------
 
+up to now in order to see the contents of a variable we have simply been calling the variable.  This works fine in an
+interactive python environment, but when running a python script from start to finish you need the print function.
+print function is easy to use and will simply print the variable.  so for instance:
+
+.. ipython::python
+
+    x = 'some string'
+    print(x)
+
+    print(1,1,2,2,3)
 
 #todo

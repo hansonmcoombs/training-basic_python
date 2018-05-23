@@ -9,7 +9,7 @@ Variables
 
 
 Numbers: Integers and Floats
---------------------
+-------------------------------------
 there are four main ways to portray numeric values in python - integers, long, floats, and complex.
 
 an Integers is as you would expect, a number without a decimal point (e.g. 1, 2, 3, or -5000).  Very big integers are

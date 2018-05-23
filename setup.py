@@ -61,15 +61,15 @@ setup(
     #
     # This field corresponds to the "Home-Page" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#home-page-optional
-    url='https://github.com/mullenkamp/project_template',  # Optional
+    url='https://github.com/mullenkamp/project_template',  # Optional #todo
 
     # This should be your name or the name of the organization which owns the
     # project.
-    author='Mike Kittridge',  # Optional
+    author='Matt Hanson',  # Optional
 
     # This should be a valid email address corresponding to the author listed
     # above.
-    author_email='mullenkamp1@gmail.com',  # Optional
+    author_email='hansonmcoombs@gmail.com',  # Optional
 
     # Classifiers help users find your project by categorizing it.
     #
@@ -91,11 +91,6 @@ setup(
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
 
@@ -123,7 +118,7 @@ setup(
     #
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['pandas'],  # Optional
+    install_requires=[],  # Optional
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"

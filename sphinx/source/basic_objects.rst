@@ -38,9 +38,9 @@ There are a number of operations that you can do with numeric values:
     x + y  # sum of x and y
     x - y  # difference of x and y
     x * z  # product of x and z
-    z / x  # quotient of z and x	(1) (2)
-    z // x  # (floored) quotient of z and x	(3)
-    z % x  # remainder of z / x	(4)
+    z / x  # quotient of z and x (1) (2)
+    z // x  # (floored) quotient of z and x (3)
+    z % x  # remainder of z / x (4)
     -x  # x negated
     abs(z)  # absolute value or magnitude of z
     int(y)  # y converted to integer

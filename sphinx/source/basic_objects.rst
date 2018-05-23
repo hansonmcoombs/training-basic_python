@@ -22,7 +22,7 @@ Floats on the other hand are numbers with a decimal point.  We won't really talk
 are really keen, have a look at {#todo find a complex number option to link to}
 
 .. ipython:: python
-
+    # test
     type(1)
     type(1000000000000000)
     type(3.1415)

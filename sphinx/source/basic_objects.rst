@@ -69,7 +69,7 @@ Boolean
 A boolean value in python is either True or False as with numeric data there a several basic operations that can
 be preformed on boolean data
 
-.. ipython:: python
+.. code:: python
 
     True or False
     True or True
@@ -82,7 +82,7 @@ be preformed on boolean data
 
 order of operations also applies to boolean operations, so:
 
-.. code:: python
+.. ipython:: python
 
     True and (True or False)
     False or (True and False)

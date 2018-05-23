@@ -33,7 +33,6 @@ There are a number of operations that you can do with numeric values:
     x = 2
     y = 3.5
     z = -5
-
     x + y  # sum of x and y
     x - y  # difference of x and y
     x * z  # product of x and z
@@ -76,7 +75,6 @@ be preformed on boolean data
     True and False
     not True
     not False
-
     all([True, True, False]) # this uses a list, which will be described in the next section
     any ([True, False, False]) # this uses a list, which will be covered in the next section
 
@@ -90,6 +88,7 @@ order of operations also applies to boolean operations, so:
 boolean values can be converted to integers and floats
 
 .. ipython:: python
+
     int(True)
     int(False)
 
@@ -104,27 +103,21 @@ considered as a string. You can make strings in a number of ways by wrapping cha
     x = 'my string'
     y = "also my string"
     z = "my string can contain quotes 'like this one'"
-
     x
     y
     z
-
     x = """
     triple " or ' can define a string that splits
     a number of lines
     like this
     """
     x
-
-
     # numbers can be represented as strings
     x = '5'
     x
-
     # and stings can be converted to floats and ints
     int(x)
     float(x)
-
     # though python isn't smart enough to convert everything to a numeric value and throws an exception
     #x = 'five'
     #int(x)
@@ -144,5 +137,4 @@ print function is easy to use and will simply print the variable.  so for instan
 
     x = 'some string'
     print(x)
-
     print(1,1,2,2,3)

@@ -30,7 +30,7 @@ are really keen, have a look at {#todo find a complex number option to link to}
 
 There are a number of operations that you can do with numeric values:
 
-.. ipython:: python
+.. code:: python
 
     x = 2
     y = 3.5
@@ -100,7 +100,7 @@ Strings
 Strings are made up of different characters (e.g. a, b, c, %, &, ?, etc.).  Every sentence ever written can be
 considered as a string. You can make strings in a number of ways by wrapping characters ' and " so for example:
 
-.. code:: python
+.. ipython:: python
 
     x = 'my string'
     y = "also my string"

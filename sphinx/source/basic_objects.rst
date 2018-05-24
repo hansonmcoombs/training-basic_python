@@ -12,11 +12,9 @@ Variables
 Numbers: Integers and Floats
 -------------------------------------
 
-there are four main ways to portray numeric values in python - integers, long, floats, and complex.
+there are three main ways to portray numeric values in python - integers, floats, and complex.
 
-an Integers is as you would expect, a number without a decimal point (e.g. 1, 2, 3, or -5000).  Very big integers are
-stored by python in another way that has enough precision (called a long).  While the behind the scenes programming is
-a bit different for longs, 99% of the time it makes no difference and you can consider them equivalent.
+an Integers is as you would expect, a number without a decimal point (e.g. 1, 2, 3, or -5000).
 
 Floats on the other hand are numbers with a decimal point.  We won't really talk about complex numbers here, but if you
 are really keen, have a look at {#todo find a complex number option to link to}
@@ -24,7 +22,6 @@ are really keen, have a look at {#todo find a complex number option to link to}
 .. ipython:: python
 
     type(1)
-    type(1000000000000000)
     type(3.1415)
     type(3.)
 
@@ -45,7 +42,6 @@ There are a number of operations that you can do with numeric values:
     z % x  # the remainder of z / x
     abs(z)  # the absolute value of z
     int(y)  # the floored integer of y
-    long(y)  # the floored long integer of y
     float(x)  # x converted to a float
     z ** x  # z to the power of x
 

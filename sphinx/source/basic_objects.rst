@@ -30,23 +30,23 @@ are really keen, have a look at {#todo find a complex number option to link to}
 
 There are a number of operations that you can do with numeric values:
 
-.. code:: python
+.. ipython:: python
 
     x = 2
     y = 3.5
     z = -5
     x + y  # sum of x and y
-    x - y  # difference of x and y
-    x * z  # product of x and z
-    z / x  # quotient of z and x (1) (2)
-    z // x  # (floored) quotient of z and x (3)
-    z % x  # remainder of z / x (4)
+    x - y  # the difference of x and y
+    x * z  # the product of x and z
+    z / x  # the quotient of z and x (2)
+    z // x # the floored quotient of z and x (3)
+    z % x  # the remainder of z / x (4)
     -x  # x negated
-    abs(z)  # absolute value or magnitude of z
-    int(y)  # y converted to integer
-    long(y)  # y converted to long integer
-    float(x)  # x converted to floating point
-    z ** x  # z to the power x
+    abs(z)  # the absolute value of z
+    int(y)  # the integer of y (floored) (3)
+    long(y)  # the long integer of y (floored) (3)
+    float(x)  # x converted to a float
+    z ** x  # z to the power of x
 
 some notes on these operations:
 

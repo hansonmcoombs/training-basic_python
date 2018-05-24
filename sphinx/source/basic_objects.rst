@@ -31,10 +31,14 @@ are really keen, have a look at {#todo find a complex number option to link to}
 There are a number of operations that you can do with numeric values:
 
 .. ipython:: python
-
     x = 2
     y = 3.5
     z = -5
+    x + y  # the sum of x and y
+    x - y  # the difference of x and y
+
+
+.. code:: python
     x + y  # sum of x and y
     x - y  # the difference of x and y
     x * z  # the product of x and z

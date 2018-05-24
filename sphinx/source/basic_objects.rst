@@ -43,10 +43,6 @@ There are a number of operations that you can do with numeric values:
     z / x  # the quotient of z and x
     z // x  # the floored quotient of z and x
     z % x  # the remainder of z / x
-
-.. code:: python
-
-    -x  # x negated
     abs(z)  # the absolute value of z
     int(y)  # the floored integer of y
     long(y)  # the floored long integer of y

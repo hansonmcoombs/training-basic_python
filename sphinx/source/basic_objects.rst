@@ -113,7 +113,7 @@ considered as a string. You can make strings in a number of ways by wrapping cha
     a number of lines
     like this
     """
-    x
+    x  # \n is the symbol for new line.  \' is the symbol for '
     # numbers can be represented as strings
     x = '5'
     x
@@ -121,8 +121,8 @@ considered as a string. You can make strings in a number of ways by wrapping cha
     int(x)
     float(x)
     # though python isn't smart enough to convert everything to a numeric value and throws an exception
-    #x = 'five'
-    #int(x)
+    x = 'five'
+    int(x)
 
 
 There are many different operators and ways to manage strings, for more information please see # link to string details

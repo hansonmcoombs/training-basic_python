@@ -28,6 +28,8 @@ are really keen, have a look at {#todo find a complex number option to link to}
     type(3.1415)
     type(3.)
 
+the type function in python tells you what type a given object or variable is.
+
 There are a number of operations that you can do with numeric values:
 
 .. ipython:: python
@@ -35,15 +37,15 @@ There are a number of operations that you can do with numeric values:
     x = 2
     y = 3.5
     z = -5
-
-.. code:: python
-
     x + y  # the sum of x and y
     x - y  # the difference of x and y
     x * z  # the product of x and z
-    z / x  # teh quotient of z and x
+    z / x  # the quotient of z and x
     z // x  # the floored quotient of z and x
     z % x  # the remainder of z / x
+
+.. code:: python
+
     -x  # x negated
     abs(z)  # the absolute value of z
     int(y)  # the floored integer of y
@@ -68,8 +70,8 @@ but it will change the type if needed (e.g. from int to float).
 Boolean
 --------
 
-A boolean value in python is either True or False as with numeric data there a several basic operations that can
-be preformed on boolean data
+A boolean value in python is either True or False (case sensitive) as with numeric data there a several basic operations
+ that can be preformed on boolean data
 
 .. ipython:: python
 

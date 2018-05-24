@@ -23,7 +23,7 @@ are really keen, have a look at {#todo find a complex number option to link to}
 
 .. ipython:: python
 
-    type(1)  # test
+    type(1)
     type(1000000000000000)
     type(3.1415)
     type(3.)
@@ -35,6 +35,9 @@ There are a number of operations that you can do with numeric values:
     x = 2
     y = 3.5
     z = -5
+
+.. code:: python
+
     x + y  # the sum of x and y
     x - y  # the difference of x and y
     x * z  # the product of x and z
@@ -45,21 +48,6 @@ There are a number of operations that you can do with numeric values:
     abs(z)  # the absolute value of z
     int(y)  # the floored integer of y
     long(y)  # the floored long integer of y
-    float(x)  # x converted to a float
-    z**x  # z to the power of x
-
-
-.. code:: python
-    x + y  # sum of x and y
-    x - y  # the difference of x and y
-    x * z  # the product of x and z
-    z / x  # the quotient of z and x (2)
-    z // x # the floored quotient of z and x (3)
-    z % x  # the remainder of z / x (4)
-    -x  # x negated
-    abs(z)  # the absolute value of z
-    int(y)  # the integer of y (floored) (3)
-    long(y)  # the long integer of y (floored) (3)
     float(x)  # x converted to a float
     z ** x  # z to the power of x
 

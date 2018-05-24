@@ -6,5 +6,6 @@ python versions
 installing python
 interactive python
 running a script
-IDEs (just spyder?)
+IDEs (just spyder?, no list a couple)
 git/downloading git
+pep 8

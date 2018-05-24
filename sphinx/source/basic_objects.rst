@@ -32,6 +32,7 @@ There are a number of operations that you can do with numeric values:
 .. ipython:: python
 
     x = 2
+    test()
     y = 3.5
     z = -5
     x + y  # the sum of x and y

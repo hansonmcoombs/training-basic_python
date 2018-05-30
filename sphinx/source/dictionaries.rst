@@ -10,7 +10,7 @@ structure of a dictionary is {key: value}.  The value can be any object in pytho
 and so on).  Keys are a bit more proscriptive; the rules are a bit more complex, but for beginners it's normally enough
 to know that numbers and strings are able to be keys.  For more details on exactly what python objects can be keys in a
 dictionary see: `Why Lists Can't be Dictionary Keys <https://wiki.python.org/moin/DictionaryKeys>`_.
-Note as of python version 3.6 dictionaries will remembers the order that the data was input, previously they were un-ordered.
+Note as of python version 3.6 dictionaries will remember the order that the data was input, previously they were un-ordered.
 Now for some examples:
 
 .. ipython:: python

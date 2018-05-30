@@ -5,19 +5,89 @@ Basic Python Objects, Variables, and Operators
 Variables
 ------------
 
-# how to assign variables
-# pointers vs objects
+Everything in python can be considered to be either a variable an object or an operator.  An object can be everything
+from a number, to function, to something more complex like a class.  For the moment let's not worry too much about
+objects, in fact most of this course is about how to create and use the plethora of objects that exist in the
+python language. Briefly an operator is something that does something to a variable or an object (e.g. =, +, -, *).
+We'll talk about operators in a moment.  Instead for now let's focus on the variable in python.
+
+A python variable is basically the name we give to an object in a script.  Assignment of a variable is simple using
+the *=* operator:
+
+.. code::python:
+
+    x = 42  # the variable in this case is x and we have assigned the value of 42 to the variable
+
+A variable can be named anything except one of the built in keywords of python:
+
+.. code::python:
+
+    and, as, assert, break, class, continue, def, del, elif, else,
+    except, False, finally, for, from, global, if, import, in, is,
+    lambda, None, nonlocal, not, or, pass, raise, return, True, try,
+    while, with, yield
+
+To get a list of these keywords you can use the help function:
+
+.. ipython::python
+
+    help('keywords')
+
+While you can name a variable anything, some options are better than others. As previously mentioned style is important.
+The PEP 8 standards suggest that variables should be lowercase, with words separated by underscores as necessary to
+improve readability.  While PEP 8 isn't necessary, it is a really good habit to get into. It is also very important not
+to give a variable the name of any of the builtin functions and variables, otherwise you cannot use the
+builtin function again in your script. That said don't panic about knowing every builtin variable, most integrated development
+editors will raise some sort of warning when you overwrite a builtin name. Also if you try to use a builtin function
+again it will simply raise an exception, for example:
+
+.. ipython::python:
+
+    # now we'll be naughty and overwrite the help function, really don't do this...
+    help = 42
+
+    # if we try to use the help function it will raise an exception
+    help('keywords')
+
+if you make this mistake, fix it in your script and reload you interpreter.
+
+.. ipython::python
+    :suppress:
+    from builtins import help
+
+Why did this happen? It has to do with how python assigns variables.  When we assigned the value of 42 to *x* above the
+number 42 was created in the computer's memory and the variable *x* was pointed to that memory via a unique object ID.
+python has a built in function id(), which allows us to see the this ID.  This is helpful as we can see how python
+handles memory.  Take a look at the example below:
+
+.. ipython::python:
+
+    x = 42
+    id(x)
+    y = x
+    id(y)
+    x = 15
+    y
+    id(x)
+    id(y)
+
+
+Note that when we set *y* = *x* all it did was point *y* to the same bit of computer memory that *x* is pointing to. When
+we re-assigned *x* (to 15) it points at a different part of memory leaving *y* unchanged with a value of 42.  So when we
+overwrote the help function above, all we did was point the variable *help* to a new object (42)
+
+When an object is no longer in use (e.g. no variables are pointing to it) a part of python called the garbage collector
+will remove the object from memory so your computer doesn't have too much on it's mind.
 
 
 Numbers: Integers and Floats
 -------------------------------------
 
-there are three main ways to portray numeric values in python - integers, floats, and complex.
+There are three main ways to portray numeric values in python - integers, floats, and complex.
 
-an Integers is as you would expect, a number without a decimal point (e.g. 1, 2, 3, or -5000).
-
-Floats on the other hand are numbers with a decimal point.  We won't really talk about complex numbers here, but if you
-are really keen, have a look at {#todo find a complex number option to link to}
+An Integers is as you would expect, a number without a decimal point (e.g. 1, 2, 3, or -5000).
+Floats on the other hand are numbers with a decimal point.  We won't really talk about complex numbers here, but it is
+useful to know that python can handle complex numbers.
 
 .. ipython:: python
 
@@ -32,17 +102,16 @@ There are a number of operations that you can do with numeric values:
 .. ipython:: python
 
     x = 2
-    test()
     y = 3.5
     z = -5
     x + y  # the sum of x and y
     x - y  # the difference of x and y
     x * z  # the product of x and z
-    z / x  # the quotient of z and x
-    z // x  # the floored quotient of z and x
+    z / x  # the quotient of z and x (2)
+    z // x  # the floored quotient of z and x (3)
     z % x  # the remainder of z / x
     abs(z)  # the absolute value of z
-    int(y)  # the floored integer of y
+    int(y)  # the integer of y rounded down
     float(x)  # x converted to a float
     z ** x  # z to the power of x
 
@@ -63,8 +132,8 @@ but it will change the type if needed (e.g. from int to float).
 Boolean
 --------
 
-A boolean value in python is either True or False (case sensitive) as with numeric data there a several basic operations
- that can be preformed on boolean data
+A boolean value in python is either True or False (case sensitive). As with numeric data there a several basic
+operations that can be preformed on boolean data
 
 .. ipython:: python
 
@@ -84,7 +153,7 @@ order of operations also applies to boolean operations, so:
     True and (True or False)
     False or (True and False)
 
-boolean values can be converted to integers and floats
+Boolean values can be converted to integers and floats where True = 1 and False = 0
 
 .. ipython:: python
 
@@ -102,7 +171,7 @@ considered as a string. You can make strings in a number of ways by wrapping cha
 
     x = 'my string'
     y = "also my string"
-    z = "my string can contain quotes 'like this one'"
+    z = "my string can contain quotes of the other type 'like this one'"
     x
     y
     z
@@ -115,23 +184,24 @@ considered as a string. You can make strings in a number of ways by wrapping cha
     # numbers can be represented as strings
     x = '5'
     x
-    # and stings can be converted to floats and ints
+    # and number stings can be converted to floats and ints
     int(x)
     float(x)
-    # though python isn't smart enough to convert everything to a numeric value and throws an exception
+    # though python isn't smart enough to convert everything to a numeric value and will raise an exception
     x = 'five'
     int(x)
 
 
-There are many different operators and ways to manage strings, for more information please see # link to string details
+There are many different operators and ways to manage strings, for more information please see
+:doc:'this chapter on strings <../string_details_formatted_output>'
 
 
 The print function
 -------------------
 
-up to now in order to see the contents of a variable we have simply been calling the variable.  This works fine in an
+Up to now in order to see the contents of a variable we have simply been calling the variable.  This works fine in an
 interactive python environment, but when running a python script from start to finish you need the print function.
-print function is easy to use and will simply print the variable.  so for instance:
+The print function is easy to use and will simply print the variable, so for instance:
 
 .. ipython:: python
 

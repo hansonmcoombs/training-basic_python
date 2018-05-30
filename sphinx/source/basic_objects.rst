@@ -14,13 +14,13 @@ We'll talk about operators in a moment.  Instead for now let's focus on the vari
 A python variable is basically the name we give to an object in a script.  Assignment of a variable is simple using
 the *=* operator:
 
-.. code::python:
+.. code:: python:
 
     x = 42  # the variable in this case is x and we have assigned the value of 42 to the variable
 
 A variable can be named anything except one of the built in keywords of python:
 
-.. code::python:
+.. code:: python:
 
     and, as, assert, break, class, continue, def, del, elif, else,
     except, False, finally, for, from, global, if, import, in, is,
@@ -29,7 +29,7 @@ A variable can be named anything except one of the built in keywords of python:
 
 To get a list of these keywords you can use the help function:
 
-.. ipython::python
+.. ipython:: python
 
     help('keywords')
 
@@ -41,7 +41,7 @@ builtin function again in your script. That said don't panic about knowing every
 editors will raise some sort of warning when you overwrite a builtin name. Also if you try to use a builtin function
 again it will simply raise an exception, for example:
 
-.. ipython::python:
+.. ipython:: python
 
     # now we'll be naughty and overwrite the help function, really don't do this...
     help = 42
@@ -51,7 +51,7 @@ again it will simply raise an exception, for example:
 
 if you make this mistake, fix it in your script and reload you interpreter.
 
-.. ipython::python
+.. ipython:: python
     :suppress:
     from builtins import help
 
@@ -60,7 +60,7 @@ number 42 was created in the computer's memory and the variable *x* was pointed 
 python has a built in function id(), which allows us to see the this ID.  This is helpful as we can see how python
 handles memory.  Take a look at the example below:
 
-.. ipython::python:
+.. ipython:: python:
 
     x = 42
     id(x)
@@ -193,7 +193,7 @@ considered as a string. You can make strings in a number of ways by wrapping cha
 
 
 There are many different operators and ways to manage strings, for more information please see
-:doc:'this chapter on strings <../string_details_formatted_output>'
+:doc: 'this chapter on strings <../string_details_formatted_output>'
 
 
 The print function

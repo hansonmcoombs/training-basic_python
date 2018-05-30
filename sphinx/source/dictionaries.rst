@@ -13,7 +13,7 @@ diction see: `Why Lists Can't be Dictionary Keys <https://wiki.python.org/moin/D
 Note as of python version 3.6 dictionaries will remembers the order that the data was input, previously they were un-ordered.
 Now for some examples:
 
-.. code:: python
+.. ipython:: python
 
     my_dict = {'key': 'value'}
     my_dict
@@ -53,7 +53,7 @@ Important dictionary functions
 Just like lists, dictionaries have a number of useful built in functions here we'll showcase the four most important -
 *.update()*, *.keys()*, *.values()*, *.items()*
 
-..code:: python:
+.. ipython:: python
 
     # .update adds the entries of a second dictionary to the first
     my_dict = {'': ''}

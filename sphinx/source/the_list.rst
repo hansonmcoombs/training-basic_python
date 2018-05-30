@@ -114,14 +114,13 @@ operators and keywords associated with lists and two most important functions as
 Note that when you append a list to a list it creates a nested list. If instead you want to append all of the
 values of an iterable (like a list) to another list then you need to use the *.extend()* function:
 
-.. code:: python
+.. ipython:: python
 
     my_list = []  # create an empty list
     my_list.extend([1,2,3,4])
     my_list
 
     # note if you try to pass a non-iterable to extend it will raise an exception
-    my_list.extend(1)
 
 
 

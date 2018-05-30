@@ -7,16 +7,19 @@ What's a list
 One of the most fundamental objects in python is the list.  A list simply holds multiple objects, these can be of any
 type. A list can be generated in two ways:
 
-.. code:: python
+.. ipython:: python
 
     # 1) with the [ ]
     my_list = [1, 2, 'some value', True]
+    my_list
 
-    # 2) by converting some other datatype (an iterable) to a list with the list function
-    my_other_list = list((1, 2, 3, 4, 5))  # this uses a tuple, which
+    # 2) by converting some other object (an iterable) to a list with the list function
+    my_other_list = list((1, 2, 3, 4, 5))  # this uses a tuple, which will be discussed later
+    my_other_list
 
     # a list can even hold other lists (nesting)
     my_nested_list = [[1, 2], [3, 4], [5, 6]]
+    my_nested_list
 
 
 length, indexing, and slicing
@@ -75,14 +78,30 @@ position index of 0, so for example *my_list*:
     my_list[:3]  # everything from the first item up to, but not including the 3rd item
 
 
-list specific functions
+list specific operations and functions
 -------------------------
 
 Almost every python object has some functions built into them that will act on the instance of the object.
 these functions are accessed with a '.', e.g. my_var.some_function().  Lists are no different, here we'll showcase the
-two most important functions associated with lists, *.append()* and *.extend()*:
+operators and keywords associated with lists and two most important functions associated with lists,
+*.append()* and *.extend()*:
 
 .. code:: python
+
+    # adding two lists creates a new list with all of the elements joined togeather
+    list1 = [1,2,3]
+    list2 = [4,5,6]
+    list1 + list2
+
+    # multiplying a list and an integer creates a new list with the previous list repeated n times
+    list1 = ['spam']
+    list1*3
+
+    # the in keyword asks the question is some element in a list and returns a boolean
+    my_list = [1,2,3,[4,5]]
+    2 in my_list
+    4 in my_list  # note that only the top most layer of the list is searched
+    [4,5] in my_list  # it will also search for more complex objects (e.g. other lists)
 
     # .append() adds something to a list
     my_list = []  # create an empty list

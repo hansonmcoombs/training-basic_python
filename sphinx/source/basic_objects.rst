@@ -189,7 +189,7 @@ considered as a string. You can make strings in a number of ways by wrapping cha
 
 
 There are many different operators and ways to manage strings, for more information please see
-:doc: 'this chapter on strings <../string_details_formatted_output>'
+:doc:`this chapter on strings <string_details_formatted_output>`
 
 
 The print function

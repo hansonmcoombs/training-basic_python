@@ -1,6 +1,9 @@
 Dictionaries
 ===============
 
+What's in a dictionary
+-----------------------
+
 Another key basic object in python is the dictionary.  Dictionaries are iterables, but unlike lists (and tuples if you
 got that far) values in a dictionary are indexed by a user specified key rather than a positional argument. the default
 structure of a dictionary is {key: value}.  The value can be any object in python (numbers, strings, boolean, lists,
@@ -37,5 +40,16 @@ Now for some examples:
     my_food
     my_food['eggs']
 
-# .values(), .keys(), .items()
-# .update()
+    # just like lists dictionaries have length
+    len(my_food)  # returns the number of key, value pairs
+
+    # the keyword in also works, but only looks in the dictionaries keys
+    'eggs' in my_food
+    'bacon' in my_food
+
+important dictionary functions
+-------------------------------
+
+Just like lists, dictionaries have a number of useful built in functions here we'll showcase the four most important -
+*.update()*, *.values()*, *.keys()*, *.items()*
+

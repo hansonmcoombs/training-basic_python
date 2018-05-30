@@ -14,19 +14,11 @@ We'll talk about operators in a moment.  Instead for now let's focus on the vari
 A python variable is basically the name we give to an object in a script.  Assignment of a variable is simple using
 the *=* operator:
 
-.. code:: python:
+.. ipython:: python
 
     x = 42  # the variable in this case is x and we have assigned the value of 42 to the variable
 
-A variable can be named anything except one of the built in keywords of python:
-
-.. code:: python:
-
-    and, as, assert, break, class, continue, def, del, elif, else,
-    except, False, finally, for, from, global, if, import, in, is,
-    lambda, None, nonlocal, not, or, pass, raise, return, True, try,
-    while, with, yield
-
+A variable can be named anything except one of the built in keywords of python.
 To get a list of these keywords you can use the help function:
 
 .. ipython:: python
@@ -50,10 +42,6 @@ again it will simply raise an exception, for example:
     help('keywords')
 
 if you make this mistake, fix it in your script and reload you interpreter.
-
-.. ipython:: python
-    :suppress:
-    from builtins import help
 
 Why did this happen? It has to do with how python assigns variables.  When we assigned the value of 42 to *x* above the
 number 42 was created in the computer's memory and the variable *x* was pointed to that memory via a unique object ID.

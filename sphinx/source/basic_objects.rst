@@ -48,7 +48,7 @@ number 42 was created in the computer's memory and the variable *x* was pointed 
 python has a built in function id(), which allows us to see the this ID.  This is helpful as we can see how python
 handles memory.  Take a look at the example below:
 
-.. ipython:: python:
+.. ipython:: python
 
     x = 42
     id(x)

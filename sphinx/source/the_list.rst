@@ -7,7 +7,7 @@ What's a list
 One of the most fundamental objects in python is the list.  A list simply holds multiple objects, these can be of any
 type. A list can be generated in two ways:
 
-.. ipython:: python:
+.. ipython:: python
 
     # 1) with the [ ]
     my_list = [1, 2, 'some value', True]
@@ -27,7 +27,7 @@ of an iterable as any sort of object that is a container for multiple objects.  
 like a list is also known as the length of the list.  Unsurprisingly there is a python function to get the length of an
 iterable like a list called *len()*
 
-.. ipython:: python:
+.. ipython:: python
 
     my_list
     len(my_list) # using the lists defined above
@@ -49,7 +49,7 @@ position index of 0, so for example *my_list*:
 +------------+------------+-----------+---------------+-----------+
 
 
-.. ipython:: python:
+.. ipython:: python
 
     my_list
 
@@ -74,6 +74,7 @@ position index of 0, so for example *my_list*:
     my_list[1:]  # everything from the first item up to and including the last item
     my_list[:3]  # everything from the first item up to, but not including the 3rd item
 
+
 list specific functions
 -------------------------
 
@@ -81,7 +82,7 @@ Almost every python object has some functions built into them that will act on t
 these functions are accessed with a '.', e.g. my_var.some_function().  Lists are no different, here we'll showcase the
 two most important functions associated with lists, *.append()* and *.extend()*:
 
-.. ipython:: python:
+.. ipython:: python
 
     # .append() adds something to a list
     my_list = []  # create an empty list
@@ -95,7 +96,7 @@ two most important functions associated with lists, *.append()* and *.extend()*:
 Note that when you append a list to a list it creates a nested list. If instead you want to append all of the
 values of an iterable (like a list) to another list then you need to use the *.extend()* function:
 
-.. ipython:: python:
+.. ipython:: python
 
     my_list = []  # create an empty list
     my_list.extend([1,2,3,4])

@@ -85,7 +85,7 @@ these functions are accessed with a '.', e.g. my_var.some_function().  Lists are
 operators and keywords associated with lists and two most important functions associated with lists,
 *.append()* and *.extend()*:
 
-.. code:: python
+.. ipython:: python
 
     # adding two lists creates a new list with all of the elements joined togeather
     list1 = [1,2,3]
@@ -114,7 +114,7 @@ operators and keywords associated with lists and two most important functions as
 Note that when you append a list to a list it creates a nested list. If instead you want to append all of the
 values of an iterable (like a list) to another list then you need to use the *.extend()* function:
 
-.. code:: python
+.. ipython:: python
 
     my_list = []  # create an empty list
     my_list.extend([1,2,3,4])

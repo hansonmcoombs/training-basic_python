@@ -60,8 +60,7 @@ position index of 0, so for example *my_list*:
     my_list[0]
     my_list[3]
 
-    # trying to index something that does not exist will raise an exception
-    my_list[4]
+    # trying to index something that does not exist e.g. my_list[4] will raise an exception
 
     # to access items from a sublist in a nested list you use chained brackets
     my_nested_list

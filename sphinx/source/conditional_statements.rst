@@ -5,7 +5,7 @@ Conditional statements in python allow code to do different things in different 
 *if*, *elif*, and *else* keywords. The easiest way to show conditional statements in python is through a simple example
  example:
 
-.. code:: python
+.. ipython:: python
 
     # what will i do
     raining = True
@@ -47,7 +47,7 @@ Before we can get onto more complex conditional statements we need to talk about
 Armed with these comparisons and the *elif* keyword we can create much more complicated conditional statements.
 *elif* is an abbreviation for else if and allows the user to specify more conditions, For example:
 
-.. code:: python
+.. ipython:: python
 
     weather = 'sunny'
     # what will I do

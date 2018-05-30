@@ -9,7 +9,7 @@ got that far) values in a dictionary are indexed by a user specified key rather 
 structure of a dictionary is {key: value}.  The value can be any object in python (numbers, strings, boolean, lists,
 and so on).  Keys are a bit more proscriptive; the rules are a bit more complex, but for beginners it's normally enough
 to know that numbers and strings are able to be keys.  For more details on exactly what python objects can be keys in a
-diction see: `Why Lists Can't be Dictionary Keys <https://wiki.python.org/moin/DictionaryKeys>`_.
+dictionary see: `Why Lists Can't be Dictionary Keys <https://wiki.python.org/moin/DictionaryKeys>`_.
 Note as of python version 3.6 dictionaries will remembers the order that the data was input, previously they were un-ordered.
 Now for some examples:
 
@@ -28,7 +28,7 @@ Now for some examples:
 
     # it is also possible to overwrite existing keys
     my_dict['key'] = 'peanut butter'
-    my_dict[key]
+    my_dict['key']
 
     # you can also create dictionaries from nest lists (or tuples) of key, value pairs and the dict() function:
     temp = [
@@ -56,8 +56,8 @@ Just like lists, dictionaries have a number of useful built in functions here we
 .. ipython:: python
 
     # .update adds the entries of a second dictionary to the first
-    my_dict = {'': ''}
-    another_dict = {'':'', '': ''}
+    my_dict = {'Bert': 'Ernie'}
+    another_dict = {'Sherlock Holmes': 'Watson', 'Batman': 'Robin'}
     my_dict.update(another_dict)
     my_dict
 

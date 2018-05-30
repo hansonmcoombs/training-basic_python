@@ -17,8 +17,8 @@ introduce them to the basics of raw python as well as familiarise them with seve
     dictionaries.rst
     sets.rst
     conditional_statements.rst
-    loops.rst
     string_details_formatted_output.rst
+    loops.rst
     global_vs_local.rst
     packages_imports.rst
     list_comprehension.rst

@@ -103,6 +103,14 @@ There are a number of operations that you can do with numeric values:
     float(x)  # x converted to a float
     z ** x  # z to the power of x
 
+    x = 42
+    x += 60 # add 60 to x and assign the new value back to x
+    x
+
+    x = 10
+    x *= 10 # multiply x by 10 and assign the new value back to x
+    x
+
 some notes on these operations:
 
 1. You can mix numeric types. Where possible python tries to maintain the numeric type throughout the operation,

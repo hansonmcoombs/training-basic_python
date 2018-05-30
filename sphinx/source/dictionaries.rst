@@ -7,10 +7,35 @@ structure of a dictionary is {key: value}.  The value can be any object in pytho
 and so on).  Keys are a bit more proscriptive; the rules are a bit more complex, but for beginners it's normally enough
 to know that numbers and strings are able to be keys.  For more details on exactly what python objects can be keys in a
 diction
-Note as of python version 3.6 dictionaries will remembers the order that the data was input.
+Note as of python version 3.6 dictionaries will remembers the order that the data was input, previously they were un-ordered.
+Now for some examples:
 
+.. code:: python
 
-# creating dictionaries , native, from tuples
-# item assigment
+    my_dict = {'key': 'value'}
+    my_dict
+
+    # to access data from a dictionary you use brackets and the key
+    my_dict['key']
+
+    # it is possible to assign new values to a dictionary
+
+    my_dict['new_key'] = 'new_value'
+    my_dict['new_key']
+
+    # it is also possible to overwrite existing keys
+    my_dict['key'] = 'peanut butter'
+    my_dict[key]
+
+    # you can also create dictionaries from nest lists (or tuples) of key, value pairs and the dict() function:
+    temp = [
+            ['peanut butter', 'jam'],
+            ['eggs', 'bacon'],
+            ['muslie', 'milk']
+            ]
+    my_food = dict(temp)
+    my_food
+    my_food['eggs']
+
 # .values(), .keys(), .items()
 # .update()

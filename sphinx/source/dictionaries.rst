@@ -51,5 +51,23 @@ Important dictionary functions
 -------------------------------
 
 Just like lists, dictionaries have a number of useful built in functions here we'll showcase the four most important -
-*.update()*, *.values()*, *.keys()*, *.items()*
+*.update()*, *.keys()*, *.values()*, *.items()*
+
+..code:: python:
+
+    # .update adds the entries of a second dictionary to the first
+    my_dict = {'': ''}
+    another_dict = {'':'', '': ''}
+    my_dict.update(another_dict)
+    my_dict
+
+    # .keys(), .values(), .items() are all about accessing all of the keys, values,
+    # and (key, value) pairs in a dictionary, respectively.
+    # they are useful to see what's in your dictionary and for iteration which we'll talk about later
+    my_dict.keys()
+    my_dict.values()
+    my_dict.items()
+    # note that the behaviour of these functions are slightly different in python 2.7
+
+
 

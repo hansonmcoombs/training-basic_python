@@ -52,7 +52,7 @@ position index of 0, so for example *my_list*:
 +------------+------------+-----------+---------------+-----------+
 
 
-.. code:: python
+.. ipython:: python
 
     my_list
 

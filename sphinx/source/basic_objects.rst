@@ -114,7 +114,7 @@ There are a number of operations that you can do with numeric values:
 some notes on these operations:
 
 1. You can mix numeric types. Where possible python tries to maintain the numeric type throughout the operation,
-but it will change the type if needed (e.g. from int to float).
+   but it will change the type if needed (e.g. from int to float).
 2. The behaviour of division in python 2.7 is different to python 3.6.  This course assumes python 3.6 see more `here <http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html#python-2-1>`_.
 3. Floored means always towards - infinity so -1.1 floored is -2 and 1.9 floored is 1.
 4. Order of operation applies to mathematical formulas in python as normal so:

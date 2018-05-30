@@ -30,7 +30,7 @@ of an iterable as any sort of object that is a container for multiple objects.  
 like a list is also known as the length of the list.  Unsurprisingly there is a python function to get the length of an
 iterable like a list called *len()*
 
-.. code:: python
+.. ipython:: python
 
     my_list
     len(my_list) # using the lists defined above

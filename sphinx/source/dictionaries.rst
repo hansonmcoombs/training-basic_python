@@ -9,7 +9,7 @@ got that far) values in a dictionary are indexed by a user specified key rather 
 structure of a dictionary is {key: value}.  The value can be any object in python (numbers, strings, boolean, lists,
 and so on).  Keys are a bit more proscriptive; the rules are a bit more complex, but for beginners it's normally enough
 to know that numbers and strings are able to be keys.  For more details on exactly what python objects can be keys in a
-diction
+diction see: `Why Lists Can't be Dictionary Keys <https://wiki.python.org/moin/DictionaryKeys>`_.
 Note as of python version 3.6 dictionaries will remembers the order that the data was input, previously they were un-ordered.
 Now for some examples:
 
@@ -43,11 +43,11 @@ Now for some examples:
     # just like lists dictionaries have length
     len(my_food)  # returns the number of key, value pairs
 
-    # the keyword in also works, but only looks in the dictionaries keys
+    # the keyword *in* also works, but only looks in the dictionaries keys
     'eggs' in my_food
     'bacon' in my_food
 
-important dictionary functions
+Important dictionary functions
 -------------------------------
 
 Just like lists, dictionaries have a number of useful built in functions here we'll showcase the four most important -

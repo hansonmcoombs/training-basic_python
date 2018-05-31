@@ -21,17 +21,17 @@ set i to the second item in the list and repeat. A simple working example is:
 
 .. ipython:: python
 
-    >>> menu = ['Egg and Spam', # the iterable
-    ...         'Egg, bacon and Spam',
-    ...         'Egg, bacon, sausage and Spam',
-    ...         'Spam, bacon, sausage and Spam',
-    ...         'Spam, egg, Spam, Spam, bacon and Spam',
-    ...         'Spam, Spam, Spam, egg and Spam',
-    ...         'Spam, Sausage, Spam, Spam, Spam, Bacon, Spam, Tomato and Spam',
-    ...         'Spam, Spam, Spam, Spam, Spam, Spam, baked beans, Spam, Spam, Spam and Spam']
-    >>> for dish in menu:  # dish is the new variable
-    ...     print(dish)  # print is the action
-    ... print("I don't like spam!")
+    menu = ['Egg and Spam', # the iterable
+            'Egg, bacon and Spam',
+            'Egg, bacon, sausage and Spam',
+            'Spam, bacon, sausage and Spam',
+            'Spam, egg, Spam, Spam, bacon and Spam',
+            'Spam, Spam, Spam, egg and Spam',
+            'Spam, Sausage, Spam, Spam, Spam, Bacon, Spam, Tomato and Spam',
+            'Spam, Spam, Spam, Spam, Spam, Spam, baked beans, Spam, Spam, Spam and Spam']
+    for dish in menu:  # dish is the new variable
+        print(dish)  # print is the action
+    print("I don't like spam!")
 
 Useful builtins for for loops
 ------------------------------
@@ -47,8 +47,8 @@ but we can easily transform it into a list to give an idea of what is in the ran
     list(range(5, 26, 5])) # every 5th integer from 5 up to, but not including 26
 
     # the range function in action
-    >>> for i in range(2,11,2):
-    ...     print( i * 10)
+    for i in range(2,11,2):
+        print( i * 10)
 
 The second is the zip function, which combines the elements of n equal length iterables together so that they can be
 accessed at the same time.
@@ -73,9 +73,9 @@ passed to it.
 .. ipython:: python
     list(enumerate(data2))
 
-    >>> for i, sidekick in enumerate(data2):
-    ...     print('{} of {}'.format(i+1, len(data2)))
-    ...     print(sidekick)
+    for i, sidekick in enumerate(data2):
+        print('{} of {}'.format(i+1, len(data2)))
+        print(sidekick)
 
 
 Lastly in the :doc:`lesson on dictionaries <dictionaries>` we mentioned the *.items()* function of the dictionary which
@@ -99,8 +99,8 @@ There is another type of loop in python called a while loop. A while loop contin
 
 .. ipython:: python
 
-    >>> my_number = 0
-    >>> while my_number < 3:
-    ...     print(my_number)
-    ...     my_number +=1
+    my_number = 0
+    while my_number < 3:
+        print(my_number)
+        my_number +=1
 

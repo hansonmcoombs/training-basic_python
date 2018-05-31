@@ -47,16 +47,15 @@ Armed with these comparisons and the *elif* keyword we can create much more comp
 
 .. ipython:: python
 
-    weather = 'sunny'
-    ... # what will I do?
-    ... if weather == 'raining':
-    ...     print('clean the garage')
-    ... elif weather == 'sunny':
-    ...     print('go to the beach')
-    ... elif weather == 'raining hellfire':
-    ...     pass  # the python keyword pass will move past the conditional statement without doing anything
-    ... else:
-    ...     print('weed the garden')
-    ... print('ok then')
-
+>>> weather = 'sunny'
+>>> # what will I do?
+>>> if weather == 'raining':
+...     print('clean the garage')
+... elif weather == 'sunny':
+...     print('go to the beach')
+... elif weather == 'raining hellfire':
+...     pass  # the python keyword pass will move past the conditional statement without doing anything
+... else:
+...     print('weed the garden')
+... print('ok then')
 

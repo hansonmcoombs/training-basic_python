@@ -4,7 +4,7 @@ Conditional Statements
 Conditional statements in python allow code to do different things in different circumstances.  These statements use the
 *if*, *elif*, and *else* keywords. The easiest way to show conditional statements in python is through a simple example:
 
-.. ipython::
+.. ipython:: python
 
     # what will i do?
     In [1]: raining = True
@@ -45,17 +45,17 @@ Before we can get onto more complex conditional statements we need to talk about
 Armed with these comparisons and the *elif* keyword we can create much more complicated conditional statements.
 *elif* is an abbreviation for else if and allows the user to specify more conditions, For example:
 
-.. ipython::
+.. ipython:: python
 
-    In [3]: weather = 'sunny'
-    In [4]: # what will I do?
-    In [5]: if weather == 'raining':
-    ......:     print('clean the garage')
-    ......: elif weather == 'sunny':
-    ......:     print('go to the beach')
-    ......: elif weather == 'raining hellfire':
-    ......:     pass  # the python keyword pass will move past the conditional statement without doing anything
-    ......: else:
-    ......:     print('weed the garden')
-    ......: print('ok then')
+    : weather = 'sunny'
+    : # what will I do?
+    : if weather == 'raining':
+    :     print('clean the garage')
+    : elif weather == 'sunny':
+    :     print('go to the beach')
+    : elif weather == 'raining hellfire':
+    :     pass  # the python keyword pass will move past the conditional statement without doing anything
+    : else:
+    :     print('weed the garden')
+    : print('ok then')
 

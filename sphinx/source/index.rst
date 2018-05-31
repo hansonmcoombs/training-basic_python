@@ -19,13 +19,13 @@ introduce them to the basics of raw python as well as familiarise them with seve
     conditional_statements.rst
     string_details_formatted_output.rst
     loops.rst
-    global_vs_local.rst
+    functions.rst
     packages_imports.rst
     list_comprehension.rst
     exception_handling.rst
+    global_vs_local.rst
     classes.rst
     test_driven_development.rst
-    functions.rst
 
 .. toctree::
     :maxdepth: 2

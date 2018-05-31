@@ -10,6 +10,7 @@ For loops in python
 The main loop that environmental scientists will use is a for loop.  The standard format for a for loop is:
 
 .. code::python
+
     for i in iterable:
         action
 
@@ -37,9 +38,10 @@ Useful builtins for for loops
 
 Python has a number of builtin functions to assist iteration in for loops.  First is the range function which can be
 used with 1-3 arguments to generate a sequence of integers. The sequence is held in a special object built for iteration,
-but we can easily transform it into a list to give an idea of what is in the range
+but we can easily transform it into a list to give an idea of what is in the range.
 
 .. ipython:: python
+
     list(range(10)) # the integers from zero up to, but not including 10
     list(range(5, 11)) # the integers from 5 up to, but not including 11
     list(range(5, 26, 5])) # every 5th integer from 5 up to, but not including 26
@@ -49,7 +51,7 @@ but we can easily transform it into a list to give an idea of what is in the ran
     ...     print( i * 10)
 
 The second is the zip function, which combines the elements of n equal length iterables together so that they can be
-accessed at the same time
+accessed at the same time.
 
 .. ipython:: python
 
@@ -59,7 +61,7 @@ accessed at the same time
 
     # using the zip function in a for loop is easy
     for lead, sidekick in zip(data1, data2):
-        print('{} & {}'.format(lead, sidekick)
+        print('{} & {}'.format(lead, sidekick))
 
 In this example rather than the for loop creating 1 new variable it creates two (lead, sidekick) for the two components
 of the zip object. You can zip togeather as many iterables a you need.  This examples also uses the .format function of
@@ -79,12 +81,18 @@ passed to it.
 Lastly in the :doc:`lesson on dictionaries <dictionaries>` we mentioned the *.items()* function of the dictionary which
 makes it easy to iterate through a dictionaries keys and values.
 
+.. ipython:: python
+
     my_dict = {'peanut butter': 'jam', 'eggs': 'bacon', 'muslie': 'milk'}
     for key, value in my_dict.items():
         print('{} is the key to {}'.format(key, value))
 
+There is another package which has even more tools for easy iteration with for loops.  It is beyond the scope of this
+lesson, but there is more information :doc:`here <itertools>`.
+
 While loops in Python
 ----------------------
+
 There is another type of loop in python called a while loop. A while loop continues to iterate until a condition becomes
  false. For environmental scientists, this loop isn't used that regularly, but it is important to at least know of it's
  existence.  More detailed information about the while loop can be found `here <https://www.tutorialspoint.com/python/python_while_loop.htm>`_.

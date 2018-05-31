@@ -57,5 +57,5 @@ Armed with these comparisons and the *elif* keyword we can create much more comp
         pass  # the python keyword pass will move past the conditional statement without doing anything
    else:
         print('weed the garden')
-    print('ok then')
+   print('ok then')
 

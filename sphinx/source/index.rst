@@ -1,5 +1,5 @@
 
-Welcome to ECan's introduction to python course
+Welcome to the Environmental Scientist's Introduction to Python Course
 =================================================
 
 This course is aimed at people who have no familiarity with the python programming language teach them to install python

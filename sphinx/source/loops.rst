@@ -9,7 +9,7 @@ For loops in python
 
 The main loop that environmental scientists will use is a for loop.  The standard format for a for loop is:
 
-.. code::python
+.. code:: python
 
     for i in iterable:
         action
@@ -44,7 +44,7 @@ but we can easily transform it into a list to give an idea of what is in the ran
 
     list(range(10)) # the integers from zero up to, but not including 10
     list(range(5, 11)) # the integers from 5 up to, but not including 11
-    list(range(5, 26, 5])) # every 5th integer from 5 up to, but not including 26
+    list(range(5, 26, 5)) # every 5th integer from 5 up to, but not including 26
 
     # the range function in action
     for i in range(2,11,2):
@@ -93,9 +93,10 @@ lesson, but there is more information :doc:`here <itertools>`.
 While loops in Python
 ----------------------
 
-There is another type of loop in python called a while loop. A while loop continues to iterate until a condition becomes
- false. For environmental scientists, this loop isn't used that regularly, but it is important to at least know of it's
- existence.  More detailed information about the while loop can be found `here <https://www.tutorialspoint.com/python/python_while_loop.htm>`_.
+There is another type of loop in python called a while loop. A while loop continues to iterate until a
+condition becomes false. For environmental scientists, this loop isn't used that regularly, but it is important to at
+least know of it's existence.  More detailed information about the while loop can be
+found `here <https://www.tutorialspoint.com/python/python_while_loop.htm>`_.
 
 .. ipython:: python
 

@@ -7,13 +7,13 @@ Conditional statements in python allow code to do different things in different 
 .. ipython:: python
 
     # what will i do?
-    In [1]: raining = True
-    In [2]: if raining:  # start of the if statement
-    ......:     # indent exactly 4 spaces
-    ......:     print('clean the garage')  # what I will do if the condition is true
-    ......: else: # start of the otherwise (else) clause
-    ......:     # indent exactly 4 spaces
-    ......:     print('weed the garden')  # what I will do if raining == False
+    >>> raining = True
+    >>> if raining:  # start of the if statement
+    ...     # indent exactly 4 spaces
+    ...     print('clean the garage')  # what I will do if the condition is true
+    ... else: # start of the otherwise (else) clause
+    ...     # indent exactly 4 spaces
+    ...     print('weed the garden')  # what I will do if raining == False
 
 In human speak this says that if it is raining (which it is), I'll clean the garage otherwise (else), I'll weed the garden.
 Python identifies that something is in the if clause (or the else clause) by the indentation of the code. After the if

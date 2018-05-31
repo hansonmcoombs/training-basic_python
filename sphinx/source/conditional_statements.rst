@@ -47,9 +47,9 @@ Armed with these comparisons and the *elif* keyword we can create much more comp
 
 .. ipython:: python
 
-    >>> weather = 'sunny'
-    >>> # what will I do?
-    >>> if weather == 'raining':
+    weather = 'sunny'
+    ... # what will I do?
+    ... if weather == 'raining':
     ...     print('clean the garage')
     ... elif weather == 'sunny':
     ...     print('go to the beach')

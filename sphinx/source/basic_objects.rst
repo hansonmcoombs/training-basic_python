@@ -204,3 +204,10 @@ The print function is easy to use and will simply print the variable, so for ins
     x = 'some string'
     print(x)
     print(1,1,2,2,3)
+
+The Python None
+------------------
+
+In python there is a built in value for an absence of a value, defined as *None* (case sensitive).  You likely will not
+encounter this value until you start working with functions, but it's important to know that it exists.
+

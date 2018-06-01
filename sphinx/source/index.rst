@@ -2,8 +2,8 @@
 Welcome to the Environmental Scientist's Introduction to Python Course
 =================================================
 
-This course is aimed at people who have no familiarity with the python programming language teach them to install python
-introduce them to the basics of raw python as well as familiarise them with several useful builtin packages.
+This course is aimed at people who have no familiarity with the python programming language. The goal is to teach
+them to install python, introduce them to the basics of raw python as well as familiarise them with several useful builtin packages.
 
 
 .. toctree::
@@ -31,12 +31,12 @@ introduce them to the basics of raw python as well as familiarise them with seve
     :maxdepth: 2
     :caption: Handy Builtins
 
+    time_datetime.rst
     itertools.rst
     glob.rst
     os_shutil.rst
     warnings.rst
     pickle.rst
-    time_datetime.rst
     multiprocessing.rst
     timeit.rst
 

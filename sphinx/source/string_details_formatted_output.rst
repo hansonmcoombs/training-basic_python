@@ -28,7 +28,7 @@ You can index and slice a string just like you would a list, so for example:
 String operators & functions
 -------------------
 
-Strings have access to two opperators *+* and ***, and the behaviour is just like lists, so:
+Strings have access to two operators *+* and *, and the behaviour is just like lists, so:
 
 .. ipython:: python
 
@@ -36,12 +36,12 @@ Strings have access to two opperators *+* and ***, and the behaviour is just lik
     my_string + 'eggs'
     my_string * 5
 
-There are a number of useful functions associated with string objects. Python strings are case sensitive so
+There are a number of useful functions associated with string objects. Python strings are case sensitive so:
 
 .. ipython:: python
 
-    'spam' == 'Spam'
-    'spam' != 'spam'
+    'spam' == 'SPAM'
+    'spam' != 'SPAM'
 
 Luckily there are a number of functions to assist with various capitalisation choices that you may want:
 
@@ -55,7 +55,7 @@ Luckily there are a number of functions to assist with various capitalisation ch
 
 There are also functions to help break up and put together strings.
 
-.. ipython::
+.. ipython:: python
 
     print(my_string)
     # .split() splits the sting into a list of stings by removing the characters specified (a space in this case)
@@ -70,18 +70,19 @@ Finally there are some useful functions to remove characters from strings:
 
 .. ipython:: python
 
-    #''.strip() removes characters from the beginning or end of a sting, the default is a space
+    # ''.strip() removes characters from the beginning and/or end of a sting, the default is a space
     test = '*********lunch*lunch***********'
     test.strip('*')
 
-    #''.replace(old, new) finds all instances of the old string and replaces it with the new string
+    # ''.replace(old, new) finds all instances of the old string and replaces it with the new string
     test.replace('lunch', 'dinner')
 
 Formatted output
 -----------------
 
-In python there is an elegant way to create formatted string outputs using the *''.format()* method. The basic premis
-of the formating is that you pass the arguments in the function into specific places into the proceeding string. So for example
+In python there is an elegant way to create formatted string outputs using the *''.format()* method. The basic premise
+of the format method is that you pass the arguments in the function into specific places into the proceeding string.
+So for example:
 
 .. ipython:: python
 
@@ -101,9 +102,9 @@ of the formating is that you pass the arguments in the function into specific pl
     print(my_new_string)
 
 Passing values back into a string is useful enough, but the .format() method of strings gives significantly more control
-over how the object is transformed into a sting. Below we'll cover the most commonly used formats for enviromental
+over how the object is transformed into a sting. Below we'll cover the most commonly used formatting options for environmental
 scientists, but For a deeper dive into the full capabilities of python formatted output,
-check out this lovely `tutorial <https://pyformat.info/>
+check out this lovely `tutorial <https://pyformat.info/>`_.
 
 .. ipython:: python
 

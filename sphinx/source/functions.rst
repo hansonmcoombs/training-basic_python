@@ -9,7 +9,7 @@ pasting is again and again in your script.  What are the chances that you'll mak
 basic principles in good programming is “do not to repeat yourself” both to avoid mistakes, but also to make code more
 human readable. Functions allow you to wrap up code into a package that you can use again and again or allow you to use
 other people's work to make the job quicker. During the course so far, we've already showcased a number of functions,
-like the print() function. We have also used methods which are a function that is tied to a specific object instance,
+like the print() function. We have also used methods which are functions that are tied to a specific object instance,
 like *[].append()*.
 
 Understanding function documentation
@@ -83,7 +83,8 @@ but I've also copied it below:
 
 print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 
-    Print objects to the text stream file, separated by sep and followed by end. sep, end, file and flush, if present, must be given as keyword arguments.
+    Print objects to the text stream file, separated by sep and followed by end. sep, end, file and flush, if
+    present, must be given as keyword arguments.
 
     All non-keyword arguments are converted to strings like str() does and written to the stream, separated by **sep**
     and followed by **end**. Both **sep** and **end** must be strings; they can also be None, which means to use the
@@ -98,22 +99,95 @@ print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 
     Changed in version 3.3: Added the flush keyword argument.
 
-# talk about *objects and another example
-# todo start here...
+Let's look at the *objects in the first line of the documentation.  This conceptually can be described as that all
+positional arguments passed to print will be treated the same way.  You can loosely think of it as all of the positional
+arguments will be turned into strings, put into a list and then passed to a '*sep*'.join() method. The keyword arguments
+work just like they would in enumerate, but because there is *objects they obviously have to be passed as kwarg.
 
+.. ipython:: python
 
+    print(1,2,3,4,5,6)
+    print(1,2,3,4,5,6, sep='!', end='ok\n') # the \n is a new line so the output prints normally
 
-# how to read function documentation
+The final word of wisdom about function documentation is to treat it a bit like a puzzle.  If you don't quite understand
+what a function does, spend some time playing with it in a console. See how it reacts to different input, try to break
+it, and if you still can't understand what's going on it's time to check google and stack overflow.
 
 Creating your own function in python
 -------------------------------------
 
-# this is coming
-# how to create a function
-# function naming conventions
-# how to create function documentation
+So we've talked a lot about using functions that others have build, but what about creating your own.  If you find
+yourself copying and pasting code a lot, it's probably time to make a function.  My personal guideline is that if I've
+used the same bit of code, with or without minor tweaks, three times, then it's time to package it up as a function.
+Looking back at the basic structure of a function:
+
+.. code:: python
+
+    def function_name(*args, **kwargs):
+        outdata = some actions
+        return outdata
+
+
+defining your own is not that challenging, as an example let's define a function to convert temperature in fahrenheit to
+celsius or kelvin:
+
+.. ipython:: python
+
+    # defining the function
+    def fahrenheit_to_ck(temp, out_c=True):
+        """
+        convert temperature in degrees fahrenheit to celsius or kelvin
+        :param temp: the temperature in fahrenheit as float
+        :param out_c: boolean, if True convert to celsius, if False kelvin
+        :return: temperature in c or k, float
+        """
+
+        c = (temp - 32) * 5 / 9
+        k = c + 273.15
+
+        if out_c:
+            return c
+        else:
+            return k
+
+    # using the function
+    fahrenheit_to_ck(451)  # use the default and return celsius
+    fahrenheit_to_ck(451, False) # return kelvin instead
+
+The *def fahrenheit_to_ck(temp, out_c=True):* tells python that a function called fahrenheit_to_ck is being created,
+that it takes two arguments (*temp*, *out_c*) and that *out_c* has a default value of *True*.  The name of you function
+should ideally be short (this one is pushing it), but descriptive, made of lowercase letters separated with underscores
+where needed for clarity. The next few lines wrapped in triple quotation marks is the docstring. The docstring is in
+built documentation for the function.  It's not necessary, but it is **highly** encouraged.  It helps anyone else
+(including future you) understand what your function does. With the docstring it becomes easy to understand what the
+argument *out_c* does. After you define a function in your script you can use it anywhere below the function definition
+in your script.  For this reason, and for convention it is best to put function definitions at the top of any script.
+You can import your function to use in other scripts, but that will be covered in a future :doc:`lesson <packages_imports>`
 
 using *args and **kwargs
 --------------------------
-# passing *args[tuples and lists) vs **kwargs (dictionaries)
 
+When you are looking at other peoples code you may find function calls that include one or more *s.  This is simply using
+the *args and **kwargs format.  let's look at an example:
+
+.. ipython:: python
+
+    things_to_print = [] # the args, must be iterable, typically a tuple, though a list also works
+    how_to_print = {'sep':'-', 'end':'!\n'} # the kwargs, must be dictionary
+
+    # simple printing
+    print(things_to_print)
+
+    # using *args
+    print(*things_to_print)
+
+    # using *args and **kwargs
+    print(*things_to_print, **how_to_print)
+
+So what is happening here?  The * in front of things_to_print tells python to take all of the values out of the iterable
+(in this case a list) and pass them as positional arguments (e.g. the first item in the list becomes the first positional
+argument and so on.  Note that you are no longer printing a list when using *things_to_print. Remember that kwargs are
+defined by a keyword and a value, which is not so different than a dictionary.  Here how_to_print has keys that exaclty
+match the keywords of the print function (*sep*, *end*) and has the values to be used as the values of those keyword
+arguments. the **how_to_print, simply tells python to use the keys and values of the dictionary to set the function
+kwargs.

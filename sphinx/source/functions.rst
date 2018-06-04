@@ -33,8 +33,8 @@ in:
     new_val = function_name(1, 2, trend_type=3)
 
 1 is the first arg, 2 is the second arg.  3 on the other hand is a kwarg or keyword argument.
-the value of this argument is defined by the keyword trend_type.  Keyword arguments often have default values.
-Following the : there is some indented code that typically does some action and creates a variable.  The end of the function
+the value of this argument is defined by the keyword trend_type. Keyword arguments often have default values.
+Following the : there is some indented code that typically does some action and creates a variable. The end of the function
 is typically marked by the return keyword.  This tells python to create a variable (new_val) and point it to the object
 that was defined as outdata inside the function. We need to return the object of outdata because as a general rule variables
 created outside a function are not accessible inside a function and those created inside a function are only accessible
@@ -70,11 +70,9 @@ iterable, must be some object that supports iteration). So armed with this knowl
     list(enumerate(iterable=my_list, start=10))
     list(enumerate(start=10, iterable=my_list))
 
-    # or everything as args
+    # or everything as args, but it will break if we shift the order
     list(enumerate(my_list, 10))
 
-    # but it will break if we shift the order
-    list(enumerate(10, my_list))
 
 
 
@@ -172,7 +170,7 @@ the *args and **kwargs format.  let's look at an example:
 
 .. ipython:: python
 
-    things_to_print = [] # the args, must be iterable, typically a tuple, though a list also works
+    things_to_print = ['Spam', 'Spam', 'Spam', 'egg', 'and Spam'] # the args, must be iterable, typically a tuple, though a list also works
     how_to_print = {'sep':'-', 'end':'!\n'} # the kwargs, must be dictionary
 
     # simple printing

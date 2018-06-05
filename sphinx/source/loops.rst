@@ -87,8 +87,8 @@ makes it easy to iterate through a dictionaries keys and values.
     for key, value in my_dict.items():
         print('{} is the key to {}'.format(key, value))
 
-There is another package which has even more tools for easy iteration with for loops.  It is beyond the scope of this
-lesson, but there is more information :doc:`here <itertools>`.
+There is another package which has even more tools for easy iteration with for loops called itertools.  It is beyond
+the scope of this course, but there is more information `here <ihttps://pymotw.com/3/itertools/>`_.
 
 While loops in Python
 ----------------------

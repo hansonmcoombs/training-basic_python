@@ -27,18 +27,32 @@ them to install python, introduce them to the basics of raw python as well as fa
     classes.rst
     test_driven_development.rst
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Handy Builtins
+Handy Builtins
+----------------
 
-    time_datetime.rst
-    itertools.rst
-    glob.rst
-    os_shutil.rst
-    warnings.rst
-    pickle.rst
-    multiprocessing.rst
-    timeit.rst
+There are a number of handy builtin modules in python.  Rather than trying to cover them all in detail here, below is a
+a table of the most useful tools, what they do, and a link to some good learning materials:
+
++--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| Module with link                                                                                             | General description                                                                                            |
++==============================================================================================================+================================================================================================================+
+| `time <https://pymotw.com/3/time/index.html>`_                                                               | Functions for manipulating clock time                                                                          |
++--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| `datetime <https://pymotw.com/3/datetime/index.html>`_                                                       | The datetime module includes functions and classes for doing date and time parsing, formatting, and arithmetic.|
++--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| `itertools <https://pymotw.com/3/itertools/index.html>`_                                                     | The itertools module includes a set of functions for working with sequence data sets.                          |
++--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| `glob <https://pymotw.com/3/glob/index.html>`_                                                               |  Use Unix shell rules to find filenames matching a pattern                                                     |
++--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| `os <https://pymotw.com/3/os/index.html#module-os>`_ and `os.path<https://pymotw.com/3/os.path/index.html>`_ | portable access to operating system specific features and work on filenames and paths.                         |
++--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| `shutil <https://pymotw.com/3/shutil/index.html>`_                                                           |  High-level file operations                                                                                    |
++--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| `pickle <https://pymotw.com/3/pickle/index.html>`_                                                           |  Object serialization                                                                                          |
++--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| `timeit <https://pymotw.com/3/timeit/index.html>`_                                                           |  Time the execution of small bits of Python code                                                               |
++--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+
 
 
 

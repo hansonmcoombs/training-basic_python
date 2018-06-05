@@ -44,7 +44,7 @@ Understanding function documentation
 
 There are heaps of already developed functions that probably do almost exactly what you need to do, but in order to
 use them you need to understand what an existing function does and it's quirks. The best source of knowledge for this
-is the function documentation of a given function. It can take a bit
+is the function documentation. It can take a bit
 of time to get good at interpreting documentation, so let's make a start of it. To start we'll look at the
 the built in function to enumerate iterables *enumerate()*.
 Original documentation is `here <https://docs.python.org/3/library/functions.html#enumerate>`_, but it is included here as well:
@@ -104,7 +104,7 @@ but it's also copied below:
 
     Changed in version 3.3: Added the flush keyword argument.
 
-Let's look at the *objects in the first line of the documentation. This conceptually can be described as that all
+Let's look at the *objects in the first line of the documentation. This effectively means that all
 positional arguments passed to print will be treated the same way. The keyword arguments
 work just like they would in enumerate, but because there is *objects they obviously have to be passed as kwarg.
 
@@ -154,6 +154,7 @@ celsius or kelvin:
 
 
 .. ipython:: python
+
     # Now to use the function
     print(fahrenheit_to_ck(451))  # use the default and return celsius
     print(fahrenheit_to_ck(451, False)) # return kelvin instead
@@ -190,8 +191,8 @@ the *args and **kwargs format.  let's look at an example:
 
 So what is happening here?  The * in front of things_to_print tells python to take all of the values out of the iterable
 (in this case a list) and pass them as positional arguments (e.g. the first item in the list becomes the first positional
-argument and so on.  Note that you are no longer printing a list when using * in front of things_to_print. Remember that kwargs are
+argument and so on).  Note that you are no longer printing a list when using * in front of things_to_print. Remember that kwargs are
 defined by a keyword and a value, which is not so different than a dictionary.  Here how_to_print has keys that exaclty
-match the keywords of the print function (*sep*, *end*) and has the values to be used as the values of those keyword
+match some of the keywords of the print function (*sep*, *end*) and has the values to be used as the values of those keyword
 arguments. the **how_to_print, simply tells python to use the keys and values of the dictionary to set the function
 kwargs.

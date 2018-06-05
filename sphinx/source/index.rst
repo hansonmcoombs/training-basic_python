@@ -11,6 +11,7 @@ them to install python, introduce them to the basics of raw python as well as fa
     :caption: Python Basics
 
     what_python.rst
+    installing_python.rst
     basic_objects.rst
     the_list.rst
     list_vs_tuple.rst

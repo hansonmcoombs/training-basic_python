@@ -21,9 +21,9 @@ Perhaps python best described in XKCD by Randell Munroe:
 Using python for environmental science has several advantages over traditional means:
 
 1. It's free and doesn't need a licence.  The skills you learn in python can be used everywhere.
-2. Repeatability. Anyone on earth can reproduce your analysis, which is the typical goal of science.
+2. Repeatability. Anyone on earth can reproduce your analysis, which is the fundamental goal of science.
 3. Speed and efficiency. Do the work once and reuse the code.
-4. Automation. Take the soul sucking tasks and give them to a non-sentient being (no, we're not talking about a grad)
+4. Automation. Take the soul sucking tasks and give them to a non-sentient being (and no, we're not talking about a grad)
 5. Big data. Only with a programming language can you manage the big data that's rapidly becoming the norm.
 6. Interactive systems.  Python allows interactive plotting, reporting, and systems that simply are not possible in traditional systems.
 7. Community. There is an enormous online community of scientific python users as demonstrated by `Programming: Pick up Python <https://www.nature.com/news/programming-pick-up-python-1.16833>`_
@@ -50,26 +50,6 @@ version of python is 3.6, but some packages only support the last stable version
 always some differences between different python versions, but for this course we are assuming that all anyone will ever
 use is python 3.6.
 
-Installing python
--------------------
-
-There are a number of ways to install python, but the easiest and the way we are going to install it via Anaconda.
-Anaconda is a free and open source distribution of python and has been build in a way to simplify package management.
-There are two ways to install python from Anaconda either 1) simply install Anaconda, which has most of the packages
-you may need or 2) install miniconda (a very light weight version) and then add the packages you need.
-
-For this course we recommend installing miniconda and building an environment based on a default set of packages that
-we find the most useful for environmental scientists. It's not nearly as complex as it sounds.
-
-1. go to https://conda.io/miniconda.html and download the appropriate python 3.6 installer
-
-2. download the env file.... #todo document with mike
-
-3. some command #todo document with mike
-
-This will give you a python environment which has most of the useful libraries for everything from simple data analysis
-to geospatial and GIS programming.
-
 
 Interactive python, running scripts and IDEs
 ---------------------------------------------
@@ -93,20 +73,21 @@ practice for good repeatable science.
 
 IDEs
 ^^^^^^
-People often find that writing python scripts in notepad or similar can be a bit tedious.  Instead enviromental scientists
+People often find that writing python scripts in notepad or similar can be a bit tedious.  Instead environmental scientists
 often turn to integrated development editors or IDEs. An IDE normally consists of a source code editor, build automation
 tools, and a debugger. Most modern IDEs also have intelligent code completion, which makes scripting much quicker.
 
-IDEs are essentially the programmers equivilant of a Harry Potter wand.  Google IDEs and there are certainly lots of
+IDEs are essentially the programmers equivilant of a Harry Potter wand. Google IDEs and there are certainly lots of
 strong opinions. Regardless of which IDE you end up with (and you will certainly end up with one of them), there are
 some important considerations. IDE's make it easy to pass code from a script editor into a console, which is really
 useful for debugging and testing things as you develop them. Despite this you must never:
 
-1. create a script that runs different things based on the lines that you comment out.
-2. create a script that relies on some other command being run in an interactive python console.
-3. create a script that relies on commands being run in some order other than the order that they are written in.
+1. create a finished script that runs different things based on the lines that you comment out.
+2. create a finished script that relies on some other command being run in an interactive python console.
+3. create a finished script that relies on commands being run in some order other than the order that they are written in.
+4. create a finished script that relies on some lines of code not being run.
 
-The reason for these three rules is code repeatability. One of the biggest advantages to science in any programming
+The reason for these four rules is code repeatability. One of the biggest advantages to science in any programming
 language is that given the inputs anyone (including yourself) can replicate the work that you've completed. Break any
 of the aforementioned rules and it is usually quicker to redo the work from scratch than use the code you've produced.
 
@@ -159,5 +140,5 @@ Pep8
 ^^^^^^^
 
 There is a documented style guide for python; it's called `PEP8 <https://www.python.org/dev/peps/pep-0008/>`_. While
-following PEP8 isn't necessary, it does make for much more readable (and thus less error) code.  Through this course we
+following PEP8 isn't necessary, it does make for much more readable (and thus less error prone) code.  Through this course we
 will try our best to follow pep8 and as you start to write scripts we'd encourage you to start taking it on board.

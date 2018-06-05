@@ -13,9 +13,20 @@ The official description of python is:
 
 All that to say that Python is an open-access programming language that is easy to read, easy to write and fast to develop.
 
-Perhaps best described in XKCD by Randell Munroe:
+Perhaps python best described in XKCD by Randell Munroe:
 
 .. figure:: img/python.png
+
+
+Using python for environmental science has several advantages over traditional means:
+
+1. It's free and doesn't need a licence.  The skills you learn in python can be used everywhere.
+2. Repeatability. Anyone on earth can reproduce your analysis, which is the typical goal of science.
+3. Speed and efficiency. Do the work once and reuse the code.
+4. Automation. Take the soul sucking tasks and give them to a non-sentient being (no, we're not talking about a grad)
+5. Big data. Only with a programming language can you manage the big data that's rapidly becoming the norm.
+6. Interactive systems.  Python allows interactive plotting, reporting, and systems that simply are not possible in traditional systems.
+7. Community. There is an enormous online community of scientific python users as demonstrated by `Programming: Pick up Python <https://www.nature.com/news/programming-pick-up-python-1.16833>`_
 
 A brief history of python
 ----------------------------
@@ -63,8 +74,47 @@ to geospatial and GIS programming.
 Interactive python, running scripts and IDEs
 ---------------------------------------------
 
-IDEs (just spyder?, no list a couple) #todo
-git/downloading git
+Interactive python
+^^^^^^^^^^^^^^^^^^^
+
+Python has the option to run in an interactive mode. This way every command that you enter is executed and you
+immediately see the output. This is a great way to play around with commands in python and build some simple knowledge,
+but it is quite limiting when it comes to doing complicated analysis.
+
+
+Running scripts
+^^^^^^^^^^^^^^^^^^
+
+You can also package up your python commands into a script (basically a text file ending with .py).  To run the script
+on windows you can execute it with the command prompt: path_to_python\python.exe path_to_script.py.  This will then run
+through all of the commands in the python script. The advantages to running a script rather than doing work through
+interactive python is that you keep all of your work. Your project effectivly documents itself.  This is really the best
+practice for good repeatable science.
+
+IDEs
+^^^^^^
+People often find that writing python scripts in notepad or similar can be a bit tedious.  Instead enviromental scientists
+often turn to integrated development editors or IDEs. An IDE normally consists of a source code editor, build automation
+tools, and a debugger. Most modern IDEs also have intelligent code completion, which makes scripting much quicker.
+
+IDEs are essentially the programmers equivilant of a Harry Potter wand.  Google IDEs and there are certainly lots of
+strong opinions. Regardless of which IDE you end up with (and you will certainly end up with one of them), there are
+some important considerations. IDE's make it easy to pass code from a script editor into a console, which is really
+useful for debugging and testing things as you develop them. Despite this you must never:
+
+1. create a script that runs different things based on the lines that you comment out.
+2. create a script that relies on some other command being run in an interactive python console.
+3. create a script that relies on commands being run in some order other than the order that they are written in.
+
+The reason for these three rules is code repeatability. One of the biggest advantages to science in any programming
+language is that given the inputs anyone (including yourself) can replicate the work that you've completed. Break any
+of the aforementioned rules and it is usually quicker to redo the work from scratch than use the code you've produced.
+
+As far as specific IDEs we would recommend that people start with **Spyder** because it is a relatively lightweight IDE
+that is open source and comes with the anaconda build that you have already installed. As time goes on, particularly once
+you start developing tools then keep your eye out for other IDEs just in case they suit you better. We won't give suggestions,
+it's better to simply ask around - someone will have an opinion.
+
 
 Philosophy of coding, The Zen of Python, and pep8
 ---------------------------------------------------
@@ -72,8 +122,12 @@ Philosophy of coding, The Zen of Python, and pep8
 Philosophy of coding
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-making mistakes is the best option #todo
-comments!!! #todo
+For new comers to python (or any programming language) some useful tips:
+
+1. Make lots and lots of mistakes. Red on the screen isn't a failure, it's a natural part of the process.
+2. You are probably not making more mistakes, you're just catching more of them.
+3. Document everything.  Comments (started with the #) are your friend.
+4. Accept that things will take longer in the short term, but shorter in the long term.
 
 The Zen of Python
 ^^^^^^^^^^^^^^^^^^^^
@@ -104,4 +158,6 @@ design into 20 aphorisms, only 19 of which have been written down.
 Pep8
 ^^^^^^^
 
-#todo
+There is a documented style guide for python; it's called `PEP8 <https://www.python.org/dev/peps/pep-0008/>`_. While
+following PEP8 isn't necessary, it does make for much more readable (and thus less error) code.  Through this course we
+will try our best to follow pep8 and as you start to write scripts we'd encourage you to start taking it on board.

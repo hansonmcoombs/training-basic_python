@@ -151,7 +151,10 @@ celsius or kelvin:
             return c
         else:
             return k
-    # using the function
+
+
+.. ipython:: python
+    # Now to use the function
     print(fahrenheit_to_ck(451))  # use the default and return celsius
     print(fahrenheit_to_ck(451, False)) # return kelvin instead
 

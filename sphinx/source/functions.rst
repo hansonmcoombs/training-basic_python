@@ -151,10 +151,9 @@ celsius or kelvin:
             return c
         else:
             return k
-
     # using the function
-    fahrenheit_to_ck(451)  # use the default and return celsius
-    fahrenheit_to_ck(451, False) # return kelvin instead
+    print(fahrenheit_to_ck(451))  # use the default and return celsius
+    print(fahrenheit_to_ck(451, False)) # return kelvin instead
 
 The *def fahrenheit_to_ck(temp, out_c=True):* tells python that a function called fahrenheit_to_ck is being created,
 that it takes two arguments (*temp*, *out_c*) and that *out_c* has a default value of *True*.  The name of you function

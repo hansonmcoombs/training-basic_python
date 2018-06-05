@@ -78,7 +78,7 @@ position index of 0, so for example *my_list*:
 
 
 list specific operations and functions
--------------------------
+---------------------------------------
 
 Almost every python object has some functions built into them that will act on the instance of the object.
 these functions are accessed with a '.', e.g. my_var.some_function().  Lists are no different, here we'll showcase the

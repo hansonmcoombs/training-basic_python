@@ -26,7 +26,7 @@ You can index and slice a string just like you would a list, so for example:
 
 
 String operators & functions
--------------------
+------------------------------
 
 Strings have access to two operators *+* and *, and the behaviour is just like lists, so:
 

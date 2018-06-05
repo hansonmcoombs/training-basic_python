@@ -145,14 +145,12 @@ celsius or kelvin:
         :param out_c: boolean, if True convert to celsius, if False kelvin
         :return: temperature in c or k, float
         """
-
        c = (temp - 32) * 5 / 9
        k = c + 273.15
-
        if out_c:
            return c
-      else:
-          return k
+       else:
+           return k
 
     # using the function
     fahrenheit_to_ck(451)  # use the default and return celsius

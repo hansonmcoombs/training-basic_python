@@ -1,6 +1,6 @@
 
 Welcome to the Environmental Scientist's Introduction to Python Course
-=================================================
+==========================================================================
 
 This course is aimed at people who have no familiarity with the python programming language. The goal is to teach
 them to install python, introduce them to the basics of raw python as well as familiarise them with several useful builtin packages.
@@ -27,8 +27,10 @@ them to install python, introduce them to the basics of raw python as well as fa
     classes.rst
     test_driven_development.rst
 
-Handy Builtins
-----------------
+
+
+Handy Builtin modules
+------------------------
 
 There are a number of handy builtin modules in python.  Rather than trying to cover them all in detail here, below is a
 a table of the most useful tools, what they do, and a link to some good learning materials:
@@ -44,7 +46,7 @@ a table of the most useful tools, what they do, and a link to some good learning
 +--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 | `glob <https://pymotw.com/3/glob/index.html>`_                                                               |  Use Unix shell rules to find filenames matching a pattern                                                     |
 +--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-| `os <https://pymotw.com/3/os/index.html#module-os>`_ and `os.path<https://pymotw.com/3/os.path/index.html>`_ | portable access to operating system specific features and work on filenames and paths.                         |
+| `os <https://pymotw.com/3/os/index.html#module-os>`_ and `os.path <https://pymotw.com/3/os.path/index.html>`_ | portable access to operating system specific features and work on filenames and paths.                         |
 +--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 | `shutil <https://pymotw.com/3/shutil/index.html>`_                                                           |  High-level file operations                                                                                    |
 +--------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+

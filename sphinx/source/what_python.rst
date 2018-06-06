@@ -17,6 +17,7 @@ Perhaps python best described in XKCD by Randell Munroe:
 
 .. figure:: img/python.png
 
+p.s. in a console type *import antigravity* and see what happens.
 
 Using python for environmental science has several advantages over traditional means:
 

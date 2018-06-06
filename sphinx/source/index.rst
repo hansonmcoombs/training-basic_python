@@ -12,6 +12,7 @@ them to install python, introduce them to the basics of raw python as well as fa
 
     what_python.rst
     installing_python.rst
+    version_control.rst
     basic_objects.rst
     the_list.rst
     list_vs_tuple.rst

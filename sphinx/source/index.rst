@@ -27,8 +27,22 @@ them to install python, introduce them to the basics of raw python as well as fa
     exception_handling.rst
     global_vs_local.rst
     classes.rst
+    debugging.rst
 
 
+
+Practice Exercises
+------------------------
+
+We have developed a set of practice exercises to give you a taste of doing your own scripting. #todo insert link
+These exercises are facillitated through github for classroom, so we recommend that you wait until you have finished
+:doc:`the lesson on version control <version_control>`_ before you begin to explore the exercises.
+
++----------+------------------------------------+
+| exercise | prerequisites / associated lessons |
++==========+====================================+
+
+#todo fix/build table using a toctree?
 
 Handy Builtin modules
 ------------------------

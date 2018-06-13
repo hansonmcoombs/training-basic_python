@@ -14,7 +14,7 @@ A namespace is a naming convention that python uses to avoid ambiguity. Simply p
 to a collection of functions and variables. You can imagine it, abstractly, as family names.
 
 +---------+-------+
-+Howard   | Smiths+
++Howard   | Smith +
 +=========+=======+
 +Larry    | Bill  +
 +---------+-------+
@@ -23,7 +23,7 @@ to a collection of functions and variables. You can imagine it, abstractly, as f
 +Curly    | Curtis+
 +---------+-------+
 
-If you say you're talking about the Howard's then it's clear which Larry you mean. For a python example both built in
+If you say you're talking about the Howard's then it's clear which Larry you mean. For a python example, both builtin
 python and the package Numpy have functions called min, max, and abs. Without a namespace there would be no way
 to distinguish between them, but if I say min vs numpy.min it's clear as day.
 
@@ -47,7 +47,16 @@ mathematical functions. There are three ways to import specific packages:
 3. importing a namespace (with or without a name change)
 
 .. ipython:: python
+    :suppress:
+
     import math
+
+.. code:: python
+
+    import math
+
+.. ipython:: python
+
     print(math.pi)
 
     import math as m  # import the namespace math and change the name to m
@@ -64,8 +73,37 @@ overwrite concern.
 Importing from your own python scripts
 ----------------------------------------
 
-You can also import functions and variables from scripts that you have already developed.
+You can also import functions and variables from scripts that you have already developed. Consider the following file
+tree:
+
+::
+
+    project #todo come up with file names
+    ├── processes
+    │   ├── __init__.py
+    │   ├── processes2
+    │       ├── __init__.py
+    │       └── bboxinout.py
+    │   └── bboxinout.py
+    ├── processes3
+    │   ├── area.py
+    │   └── bboxinout.py
+
+As long as the project folder is in your python path (more on this in a second) you can access
+
+# __init__.py explanation
 
 # python path... update in script or in windows
 how to import things from your own packages...
-# python 3 makes it tricky to use anything other than absolute paths.
+# python 3 makes it tricky to use anything other than absolute paths, ignore relative path options
+
+Adding a folder to the python path
+------------------------------------
+
+On Windows
+^^^^^^^^^^^^
+
+Within python
+^^^^^^^^^^^^^^^
+
+

@@ -122,5 +122,10 @@ values of an iterable (like a list) to another list then you need to use the *.e
 
     # note if you try to pass a non-iterable to extend it will raise an exception
 
+The tuple
+----------
 
+There is another basic python object, the tuple.  A tuple is denoted similarly to a list, but using () instead of []
+tuples are generated and sliced exactly the same as lists, but they are immutable.  This concept is beyond this lesson,
+but will be covered in :doc:`here <list_vs_tuple>`
 

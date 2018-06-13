@@ -8,26 +8,29 @@ them to install python, introduce them to the basics of raw python as well as fa
 
 .. toctree::
     :maxdepth: 2
-    :caption: Python Basics
+    :caption: Must Have Python Basics
 
     what_python.rst
     installing_python.rst
     version_control.rst
     basic_objects.rst
     the_list.rst
-    list_vs_tuple.rst
     dictionaries.rst
-    sets.rst
     conditional_statements.rst
-    string_details_formatted_output.rst
     loops.rst
+    string_details_formatted_output.rst
     functions.rst
     packages_imports.rst
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Nice to Have Python Basics
+
+    list_vs_tuple.rst
+    sets.rst
     list_comprehension.rst
     exception_handling.rst
-    global_vs_local.rst
     classes.rst
-    debugging.rst
 
 
 
@@ -36,13 +39,40 @@ Practice Exercises
 
 We have developed a set of practice exercises to give you a taste of doing your own scripting. #todo insert link
 These exercises are facillitated through github for classroom, so we recommend that you wait until you have finished
-:doc: `the lesson on version control <version_control>`_ before you begin to explore the exercises.
+:doc:`the lesson on version control <version_control>` before you begin to explore the exercises.
 
-+----------+------------------------------------+
-| exercise | prerequisites / associated lessons |
-+==========+====================================+
-
-#todo fix/build table using a toctree?
++-------------+-------------------------------------------------------+
+| exercise    | prerequisites / associated lessons                    |
++=============+=======================================================+
+|             | .. toctree::                                          |
+|             |     :maxdepth: 1                                      |
+|             |                                                       |
+|             |     what_python.rst                                   |
+| exercise 1  |     installing_python.rst                             |
+|             |     basic_objects.rst                                 |
+|             |     the_list.rst                                      |
+|             |     dictionaries.rst                                  |
+|             |                                                       |
++-------------+-------------------------------------------------------+
+|             | .. toctree::                                          |
+|             |     :maxdepth: 1                                      |
+| exercise 2  |                                                       |
+|             |     conditional_statements.rst                        |
+|             |     loops.rst                                         |
+|             |                                                       |
++-------------+-------------------------------------------------------+
+|             | .. toctree::                                          |
+|             |     :maxdepth: 1                                      |
+| exercise 3  |                                                       |
+|             |     string_details_formatted_output.rst               |
+|             |                                                       |
++-------------+-------------------------------------------------------+
+|             | .. toctree::                                          |
+|             |     :maxdepth: 1                                      |
+| exercise 4  |                                                       |
+|             |     functions.rst                                     |
+|             |                                                       |
++-------------+-------------------------------------------------------+
 
 Handy Builtin modules
 ------------------------

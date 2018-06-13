@@ -142,4 +142,5 @@ Pep8
 
 There is a documented style guide for python; it's called `PEP8 <https://www.python.org/dev/peps/pep-0008/>`_. While
 following PEP8 isn't necessary, it does make for much more readable (and thus less error prone) code.  Through this course we
-will try our best to follow pep8 and as you start to write scripts we'd encourage you to start taking it on board.
+will try our best to follow pep8 and point out conventions. As you start to write scripts we'd encourage you to start
+taking it on board.

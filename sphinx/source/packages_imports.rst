@@ -11,7 +11,8 @@ scripting language and it provides two main functions: 1) it is explicit what pa
 to import things, we need to have a quick discussion around namespaces.
 
 A namespace is a naming convention that python uses to avoid ambiguity. Simply put, a namespace is a name given
-to a collection of functions and variables. You can imagine it, abstractly, as family names.
+to a collection of functions and variables. You can imagine it, abstractly, as family names. Consider the Howard's and
+the Smiths
 
 +---------+-------+
 +Howard   | Smith +
@@ -23,52 +24,54 @@ to a collection of functions and variables. You can imagine it, abstractly, as f
 +Curly    | Carl  +
 +---------+-------+
 
-If you say you're talking about the Howard's then it's clear which Larry you mean. For a python example, both builtin
+Both families ahve a member called Larry, if I just tell you I'm going to see Larry, you don't know who I mean. Instead
+if I say I'm going over to the Howard's then it's clear which Larry I mean. For a python example, both builtin
 python and the package Numpy have functions called min, max, and abs. Without a namespace there would be no way
 to distinguish between them, but if I say min vs numpy.min it's clear as day.
 
 Let's look at some examples of how to import packages using the package math, which unsurprisingly has a whole host of
-mathematical functions. There are three ways to import specific packages:
+mathematical functions and objects. There are three ways to import specific packages:
 
-1. importing selected items from a package to the current namespace
+1. Importing selected items from a package to the current namespace
 
-.. ipython:: python
+    .. ipython:: python
 
-    from math import pi
-    print(pi)
+        from math import pi  # just import pi
+        print(pi)
 
-2. importing everything from a package to the current namespace
+    This is useful if you know you only need a few select functions from a package, but does run the risk of overwriting a
+    function that is already present, for example *from numpy import min* would overwrite the builtin min function.
 
-.. ipython:: python
+2. Importing everything from a package to the current namespace
 
-    from math import *
-    print(pi)
+    .. ipython:: python
 
-3. importing a namespace (with or without a name change)
+        from math import *  # import everything
+        print(pi)
 
-.. ipython:: python
-    :suppress:
+    This is really bad form in most scripts as you run a serious risk that you'll overwrite something you don't want to.
+    Also if you import everything from multiple packages it is less clear where a given function or variable came from.
 
-    import math
+3. Importing a namespace (with or without a name change)
 
-.. code:: python
+    .. ipython:: python
+        :suppress:
 
-    import math
+        import math
 
-.. ipython:: python
+    .. code:: python
 
-    print(math.pi)
+        import math
 
-    import math as m  # import the namespace math and change the name to m
-    print(m.pi)
+    .. ipython:: python
 
-1) is useful if you know you only need a few select functions from a package, but does run the risk of overwriting a
-function that is already present, for example *from numpy import min* would overwrite the builtin min function. 2) is
-really bad form in most scripts as you run a serious risk that you'll overwrite something you don't want to.  Also if
-you import everything from multiple packages it is less clear where a given function or variable came from. 3) is
-probably the most common and is more efficient (for the coder) if many functions are going to be used, it also eliminates
-the overwrite concern.
+        print(math.pi)
 
+        import math as m  # import the namespace math and change the name to m
+        print(m.pi)
+
+    This is probably the most common and is more efficient (for the coder) if many functions are going to be used, it
+    also eliminates the overwrite concern.
 
 Importing from your own python scripts
 ----------------------------------------
@@ -89,12 +92,12 @@ tree:
     │   ├── rainfall_interpolation.py
     │   └── lsr.py
 
-As long as the project folder is in your PYTHONPATH (more on this in a second) you can import objects from any script (*.py)
+As long as the project folder is in your PYTHONPATH (more on this in a second) you can import objects from any script (.py)
 that is in any python module.  A python module simply a folder that contains an *__init__.py* file. The file may be
 completely blank, or it can hold a set of imports for initialising the module. For our purposes we'll assume that the
 *__init__.py* file is blank, but you can find more information about what can be contained in inits `here <http://mikegrouchy.com/blog/2012/05/be-pythonic-__init__py.html>`_
 
-Looking at the project tree above (remember the project folder is in your python path), you can import objects as follows:
+Looking at the project tree above (remember the project folder is in your PYTHONPATH), you can import objects as follows:
 
 .. code:: python
 
@@ -106,8 +109,8 @@ Looking at the project tree above (remember the project folder is in your python
 
 Note that you cannot import anything from the examples folder as it does not have an *__init__.py* file.
 
-Adding a folder to the python path
-------------------------------------
+Adding a folder to the PYTHONPATH
+-----------------------------------
 
 On Windows
 ^^^^^^^^^^^^
@@ -135,7 +138,7 @@ You can also add a folder to your python path in a script before you import from
 .. code:: python
 
     folder_path = "C:/Users/Documents/project"  # path to the project folder
-    import sys  # a built in package which helps you access the python path
+    import sys  # a built in package which helps you access the pythonpath
     sys.path.append(folder_path)  # adds the folder to the pythonpath
     from functions.lsr_calc import pet_to_aet  # now you can import as usual
 

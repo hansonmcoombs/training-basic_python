@@ -7,8 +7,8 @@ External packages
 We've already talked about installing specific packages, but simply installing a package on your computer does not allow
 you to use the package in a script - you also need to import the package. This is very much in line with every other
 scripting language and it provides two main functions: 1) it is explicit what packages are used for a given script and
-it lowers the overhead of any script (you don't need to load in everything you've installed). Before we explain how to
-import things, we need to have a quick discussion around namespaces.
+2) it lowers the overhead of any script (you don't need to load in everything you've installed). Before we explain how
+to import things, we need to have a quick discussion around namespaces.
 
 A namespace is a naming convention that python uses to avoid ambiguity. Simply put, a namespace is a name given
 to a collection of functions and variables. You can imagine it, abstractly, as family names.
@@ -20,7 +20,7 @@ to a collection of functions and variables. You can imagine it, abstractly, as f
 +---------+-------+
 +Moe      | Larry +
 +---------+-------+
-+Curly    | Curtis+
++Curly    | Carl  +
 +---------+-------+
 
 If you say you're talking about the Howard's then it's clear which Larry you mean. For a python example, both builtin
@@ -63,11 +63,11 @@ mathematical functions. There are three ways to import specific packages:
     print(m.pi)
 
 1) is useful if you know you only need a few select functions from a package, but does run the risk of overwriting a
-function that is already present, for example from numpy import min would overwrite the builtin min function. 2) is
+function that is already present, for example *from numpy import min* would overwrite the builtin min function. 2) is
 really bad form in most scripts as you run a serious risk that you'll overwrite something you don't want to.  Also if
 you import everything from multiple packages it is less clear where a given function or variable came from. 3) is
-probably the most common and is more efficient (for the coder) if many functions are going to be used, or if there is an
-overwrite concern.
+probably the most common and is more efficient (for the coder) if many functions are going to be used, it also eliminates
+the overwrite concern.
 
 
 Importing from your own python scripts
@@ -78,24 +78,33 @@ tree:
 
 ::
 
-    project #todo come up with file names
-    ├── processes
+    project
+    ├── functions
     │   ├── __init__.py
-    │   ├── processes2
+    │   ├── interpolation_techs
     │       ├── __init__.py
-    │       └── bboxinout.py
-    │   └── bboxinout.py
-    ├── processes3
-    │   ├── area.py
-    │   └── bboxinout.py
+    │       └── geostatistical.py
+    │   └── lsr_calc.py
+    ├── examples
+    │   ├── rainfall_interpolation.py
+    │   └── lsr.py
 
-As long as the project folder is in your python path (more on this in a second) you can access
+As long as the project folder is in your PYTHONPATH (more on this in a second) you can import objects from any script (*.py)
+that is in any python module.  A python module simply a folder that contains an *__init__.py* file. The file may be
+completely blank, or it can hold a set of imports for initialising the module. For our purposes we'll assume that the
+*__init__.py* file is blank, but you can find more information about what can be contained in inits `here <http://mikegrouchy.com/blog/2012/05/be-pythonic-__init__py.html>`_
 
-# __init__.py explanation
+Looking at the project tree above (remember the project folder is in your python path), you can import objects as follows:
 
-# python path... update in script or in windows
-how to import things from your own packages...
-# python 3 makes it tricky to use anything other than absolute paths, ignore relative path options
+.. code:: python
+
+    # import a mythical function that converts potential evapotranspiration (et) to actual et from lsr_calc.py
+    from functions.lsr_calc import pet_to_aet
+
+    # import a mythical function that does kriging interpolation from geostatistical.py
+    from functions.interpolation_techs.geostatistical import krig
+
+Note that you cannot import anything from the examples folder as it does not have an *__init__.py* file.
 
 Adding a folder to the python path
 ------------------------------------
@@ -103,7 +112,30 @@ Adding a folder to the python path
 On Windows
 ^^^^^^^^^^^^
 
+1. Open Explorer.
+2. Right-click *'Computer'* in the Navigation Tree Panel on the left.
+3. Select *'Properties'* at the bottom of the Context Menu.
+4. Select *'Advanced system settings'*
+5. Click *'Environment Variables...'* in the Advanced Tab
+6. Under 'System Variables':
+    1. If it does not exist add: **PYTHONPATH**
+    2. Append the path to your project separating paths with *;* as follows
+
+.. code::
+
+    C:\Users\Documents\project;C:\another-library
+
+You will now be able to import objects from projects in every python script that you write on your computer.
+
 Within python
 ^^^^^^^^^^^^^^^
 
+You can also add a folder to your python path in a script before you import from that folder as follows:
+
+.. code:: python
+
+    folder_path = "C:/Users/Documents/project"  # path to the project folder
+    import sys  # a built in package which helps you access the python path
+    sys.path.append(folder_path)  # adds the folder to the pythonpath
+    from functions.lsr_calc import pet_to_aet  # now you can import as usual
 

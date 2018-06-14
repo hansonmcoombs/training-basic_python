@@ -5,8 +5,8 @@ Basic Python Objects, Variables, and Operators
 Variables
 ------------
 
-Everything in python can be considered to be either a variable an object or an operator.  An object can be everything
-from a number, to function, to something more complex like a class.  For the moment let's not worry too much about
+Everything in python can be considered to be either a variable, an object, or an operator.  An object can be everything
+from a number, to a function, to something more complex like a class.  For the moment let's not worry too much about
 objects, in fact most of this course is about how to create and use the plethora of objects that exist in the
 python language. Briefly an operator is something that does something to a variable or an object (e.g. =, +, -, *).
 We'll talk about operators in a moment.  Instead for now let's focus on the variable in python.

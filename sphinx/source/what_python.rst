@@ -11,7 +11,7 @@ The official description of python is:
     the extensive standard library are available in source or binary form without charge for all major platforms, and can
     be freely distributed.
 
-All that to say that Python is an open-access programming language that is easy to read, easy to write and fast to develop.
+All that to say that Python is an open-source programming language that is easy to read, easy to write and fast to develop.
 
 Perhaps python best described in XKCD by Randell Munroe:
 
@@ -46,10 +46,7 @@ Unix/C hackers. I chose Python as a working title for the project, being in a sl
 Python versions
 -----------------
 
-There are currently 3 main versions of python, though typically only two are actually being used.  The most recent
-version of python is 3.6, but some packages only support the last stable version of python 2, which is 2.7.  There as
-always some differences between different python versions, but for this course we are assuming that all anyone will ever
-use is python 3.6.
+There are currently two main versions of python - Python 2 and Python 3. Python 3 is the branch that is being actively developed, while Python 2 only has legacy fixes. Python 2 only exists because Python 3 was not backwards compatible with Python 2. All new programmers should go straight to Python 3 unless there's a really good reason (e.g. legacy packages in 2.7). The current stable version is Python 3.6, which is the version we will use in this course.
 
 
 Interactive python, running scripts and IDEs
@@ -142,5 +139,4 @@ Pep8
 
 There is a documented style guide for python; it's called `PEP8 <https://www.python.org/dev/peps/pep-0008/>`_. While
 following PEP8 isn't necessary, it does make for much more readable (and thus less error prone) code.  Through this course we
-will try our best to follow pep8 and point out conventions. As you start to write scripts we'd encourage you to start
-taking it on board.
+will try our best to follow pep8 and as you start to write scripts we'd encourage you to start taking it on board.

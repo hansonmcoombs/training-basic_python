@@ -1,4 +1,4 @@
-The Python List
+The List
 ================
 
 What's a list
@@ -40,7 +40,7 @@ iterable like a list called *len()*
     # note for nested lists it will only give the length of the outermost list
     len(my_nested_list)
 
-Great, I've but my very important data into a list, but how on earth can I get it out?  Through indexing and slicing.
+Great, I've put my very important data into a list, but how on earth can I get it out?  Through indexing and slicing.
 Indexing is getting out a single item in the list, while slicing is getting out a subset of the list. Python is a zero
 based indexing language.  That's a big phrase to say that the first (or more accurately the zeroth) item is given a
 position index of 0, so for example *my_list*:
@@ -81,7 +81,7 @@ list specific operations and functions
 ---------------------------------------
 
 Almost every python object has some functions built into them that will act on the instance of the object.
-these functions are accessed with a '.', e.g. my_var.some_function().  Lists are no different, here we'll showcase the
+These functions are accessed with a '.', e.g. my_var.some_function().  Lists are no different, here we'll showcase the
 operators and keywords associated with lists and two most important functions associated with lists,
 *.append()* and *.extend()*:
 

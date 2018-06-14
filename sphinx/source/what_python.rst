@@ -46,7 +46,7 @@ Unix/C hackers. I chose Python as a working title for the project, being in a sl
 Python versions
 -----------------
 
-There are currently two main versions of python - Python 2 and Python 3. Python 3 is the branch that is being actively developed, while Python 2 only has legacy fixes. Python 2 only exists because Python 3 was not backwards compatible with Python 2. All new programmers should go straight to Python 3 unless there's a really good reason (e.g. legacy packages in 2.7). The current stable version is Python 3.6. This course will use python 3.6.
+There are currently two main versions of python - Python 2 and Python 3. Python 3 is the branch that is being actively developed, while Python 2 only has legacy fixes. Python 2 only exists because Python 3 was not backwards compatible with Python 2. All new programmers should go straight to Python 3 unless there's a really good reason (e.g. legacy packages in 2.7). The current stable version is Python 3.6, which is the version we will use in this course.
 
 
 Interactive python, running scripts and IDEs

@@ -80,7 +80,7 @@ To create an environment with a specific version of Python:
 
 .. code-block:: bash
 
-      conda create -n myenv python=3.4
+      conda create -n myenv python=3.6
 
 .. _env-yml:
 

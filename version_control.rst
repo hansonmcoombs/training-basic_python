@@ -35,16 +35,23 @@ This uses a feature called branches, which is out of scope for this lesson, but 
 Introduction to Github
 -----------------------
 
+Github is a cloud hosted
 # what is github
-# how to use github (how to use with spyder???)
+
+# todo how to use github (how to use with spyder???)
 https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 https://guides.github.com/activities/hello-world/
 # how much detail do we need to go into for git at the moment?  pull requests?? or just simple commit and push?
 # should we outsource this rather than re-creating?... probably not...
 
-Introduction to Github for Classroom
--------------------------------------
+Github Classroom
+^^^^^^^^^^^^^^^^^^^^^
 
+In this course we use Github Classroom to host the exercises.  Github Classroom allows students to copy repositories to
+their own Github account. The new copy is separate from the original repository which allows the student to make changes
+without affecting the original.  The author of the repository (the teacher) is also made a collaborater on the project so
+they can check in on the student's work and provide feedback.  Our use of Github classroom is fairly simple, we just use
+it's copying functionality and will not monitor or provide feedback.
 # what is github  classroom
 
 #todo

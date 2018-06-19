@@ -213,6 +213,7 @@ Anaconda Prompt, run:
 
    conda list -n myenv scipy
 
+.. _new_in_env:
 
 Installing new packages in an environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -374,21 +375,117 @@ Our recommended python installation for further work
 1. If you have not, install miniconda
     1. go to https://conda.io/miniconda.html and download the appropriate python 3.6 installer and accept all of the defaults
 2. Create a virtual environment for your project
-    1. select the most applicable .yml files from below and modify it to your needs (change name etc.)
+    1. create a .yml files from the packages you need below.
     2. open an anaconda prompt
-    3. follow the instructions :ref:`to create an environment from a .yml file <env-yml>`
+    3. follow the instructions :ref: `to create an environment from a .yml file <new_in_env>`
     4. enter y and press enter when prompted with 'are you sure'
 3. That's it python and spyder for your specific project should now be installed. To use python with spyder, in the start menu (under anaconda) you should see a version of spyder followed by your virtual environment's name.  Open that and get cracking!
 4. Each time you start a new project go back to 2 and create a new virtual environment.
 
-pre-built python environment files for environmental scientists
-----------------------------------------------------------------
+Build your own python environment file for environmental scientists
+---------------------------------------------------------------------
 
-We have put together a set of default environments to make the creation of useful environments easier. Below are links
-to .yml files, last modified dates, and descriptions of example environments.
+As a base for any environment file we suggest the following build:
 
-# todo set up some defaults for people at ecan and other regional councils -- discuss with mike
-# default options (or simply just a chuck option)
-# the full monty (everything and it's dog)
-# data science and GIS
-# data science and statistics
+.. code::
+
+    name: [insert_your_enviroment_name_here]
+    channels:
+      - conda-forge
+      - defaults
+    dependencies:
+      - python=3.6
+      - spyder
+      - numpy
+      - matplotlib
+      - pandas
+      - scipy
+
+This build has the core of pythons scientific data processing (python + numpy, pandas, and scipy) as well as the core data
+visualisation tool (matplotlib), and somewhat optionally, the spyder IDE. We default to the conda-forge channel, as it
+is often the best anaconda channel to make all of the packages play nice together.
+
+Depending on what you need in your project you can add on any number of packages.  Below, we've put together some tables of
+packages that we've found to be high quality and easily usable. Rather than re-producing the installation instructions,
+which could then go out of date, we've simply included a link to the package documentation. You can of
+course :ref: `add packages <course-env>` after you've built the environment.  Just be sure to export a new environment
+file to hold in your git repository.
+
+
+Advanced visualisation packages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++--------------------------------------------------------------------------+-----------------------------------------------------------+
+| package                                                                  | utility / comments                                        |
++==========================================================================+===========================================================+
+| `bokeh <https://bokeh.pydata.org/en/latest/>`_                           | Interactive data visualisation                            |
++--------------------------------------------------------------------------+-----------------------------------------------------------+
+| `seaborn <https://seaborn.pydata.org/>`_                                 | Statistical data visualisation                            |
++--------------------------------------------------------------------------+-----------------------------------------------------------+
+| `holoviews <http://holoviews.org/>`_                                     | Simplified data visualisation for quick plotting          |
++--------------------------------------------------------------------------+-----------------------------------------------------------+
+
+
+Data access packages
+^^^^^^^^^^^^^^^^^^^^^^
+
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| package                                                                  | utility / comments                                                                                                                           |
++==========================================================================+==============================================================================================================================================+
+| `netcdf4 <https://pypi.org/project/netCDF4/>`_                           | Read and write access for `NetCDF files <https://www.unidata.ucar.edu/software/netcdf/docs/netcdf_introduction.html>`_                       |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `xarray <http://xarray.pydata.org/en/stable/>`_                          | N-D labeled arrays + Read and write access for `NetCDF files <https://www.unidata.ucar.edu/software/netcdf/docs/netcdf_introduction.html>`_  |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `pdsql <http://pdsql.readthedocs.io/en/latest/>`_                        | #todo mike                                                                                                                                   |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `hilltop-py <https://pypi.org/project/hilltop-py/>`_                     | #todo mike                                                                                                                                   |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `sqlalchemy <https://www.sqlalchemy.org/>`_                              | Python - SQL interface                                                                                                                       |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+Geo-spatial analysis
+^^^^^^^^^^^^^^^^^^^^^^
+
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| package                                                                  | utility / comments                                                                                                                           |
++==========================================================================+==============================================================================================================================================+
+| `geopandas <http://geopandas.org/>`_                                     | Pandas like gis data manipulation, we highly recommend this package                                                                          |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `rasterio <https://github.com/mapbox/rasterio>`_                         | Easy I/O for geospatial raster data                                                                                                          |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `osgeo (gdal + ogr) <https://www.osgeo.org/>`_                           | c processing systems for raster and vector GIS data, can be difficult to install we suggest installing geopandas (which then installs osgeo) |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `fiona <https://pypi.org/project/Fiona/>`_                               | API for gdal, can be difficult to install, we suggest simply installing geopandas (which then installs fiona)                                |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `shapely <https://pypi.org/project/Shapely/>`_                           | Manipulation and analysis of planar geometric objects, can be difficult to install, we suggest installing geopandas (which installs shapely) |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `pcraster <http://pcraster.geo.uu.nl/>`_                                 | Raster based environmental modelling                                                                                                         |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| `#todo mike get new coordinate conversion package <www.google.com>`_     | package for conversion between coordinate reference systems                                                                                  |
++--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+Advanced statistical analysis
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++--------------------------------------------------------------------------+-----------------------------------------------------------+
+| package                                                                  | utility / comments                                        |
++==========================================================================+===========================================================+
+| `scikit-learn <http://scikit-learn.org/stable/index.html>`_              | Machine learning in python                                |
++--------------------------------------------------------------------------+-----------------------------------------------------------+
+| `statsmodels <https://www.statsmodels.org/stable/index.html>`_           | Generalised statistical models in python                  |
++--------------------------------------------------------------------------+-----------------------------------------------------------+
+
+Other
+^^^^^^^
+
++--------------------------------------------------------------------------+-----------------------------------------------------------------+
+| package                                                                  | utility / comments                                              |
++==========================================================================+=================================================================+
+| `scikit-image <http://scikit-image.org/>`_                               | Scientific image processing in python                           |
++--------------------------------------------------------------------------+-----------------------------------------------------------------+
+| `networkx <https://networkx.github.io/>`_                                | Complex network analysis in python                              |
++--------------------------------------------------------------------------+-----------------------------------------------------------------+
+| `flopy <https://modflowpy.github.io/flopydoc/>`_                         | Python interface for Modflow Suite models                       |
++--------------------------------------------------------------------------+-----------------------------------------------------------------+
+| `Pyemu <https://pypi.org/project/pyemu/>`_                               | Linear base model independent uncertainty analysis (e.g. PEST)  |
++--------------------------------------------------------------------------+-----------------------------------------------------------------+

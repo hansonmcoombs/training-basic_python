@@ -16,9 +16,9 @@ them to install python, introduce them to the basics of raw python as well as fa
     basic_objects.rst
     the_list.rst
     dictionaries.rst
+    string_details_formatted_output.rst
     conditional_statements.rst
     loops.rst
-    string_details_formatted_output.rst
     functions.rst
     packages_imports.rst
 
@@ -57,14 +57,14 @@ These exercises are facillitated through github for classroom, so we recommend t
 |             | .. toctree::                                          |
 |             |     :maxdepth: 1                                      |
 | exercise 2  |                                                       |
-|             |     conditional_statements.rst                        |
-|             |     loops.rst                                         |
+|             |     string_details_formatted_output.rst               |
 |             |                                                       |
 +-------------+-------------------------------------------------------+
 |             | .. toctree::                                          |
 |             |     :maxdepth: 1                                      |
 | exercise 3  |                                                       |
-|             |     string_details_formatted_output.rst               |
+|             |     conditional_statements.rst                        |
+|             |     loops.rst                                         |
 |             |                                                       |
 +-------------+-------------------------------------------------------+
 |             | .. toctree::                                          |

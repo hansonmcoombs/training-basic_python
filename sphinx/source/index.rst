@@ -39,7 +39,7 @@ Practice Exercises
 
 We have developed a set of practice exercises to give you a taste of doing your own scripting.
 These exercises are facillitated through Github Classroom, so we recommend that you wait until you have finished
-:doc:`the lesson on version control <version_control>` before you begin to explore the exercises. For more information about Github Classroom check out `these videos <>`_.  If you want to get on to the exercises, `this link <https://classroom.github.com/a/CgnR3BXt>`_ will create a new repository with a copy of the exercises for you to begin working.
+:doc:`the lesson on version control <version_control>` before you begin to explore the exercises. If you want to get on to the exercises, `this link <https://classroom.github.com/a/CgnR3BXt>`_ will create a new repository with a copy of the exercises for you to begin working.
 
 +-------------+-------------------------------------------------------+
 | exercise    | prerequisites / associated lessons                    |

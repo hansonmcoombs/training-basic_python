@@ -2,8 +2,12 @@
 Welcome to the Environmental Scientist's Introduction to Python Course
 ==========================================================================
 
-This course is aimed at people who have no familiarity with the python programming language. The goal is to teach
-them to install python, introduce them to the basics of raw python as well as familiarise them with several useful builtin packages.
+This course is is an open source training course to give environmental scientists the foundation they need to begin learning and using
+the scientific tools that have been developed for python. The course focuses on simplifying python language into two
+buckets: **the must haves** and **the nice to haves**. The course if far from comprehensive, but we believe that it's
+better for people to get cracking, and fill in the gaps as they develop their skills.
+
+    **Expected course duration: 1-2 days**
 
 
 .. toctree::

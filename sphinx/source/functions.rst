@@ -113,7 +113,9 @@ work just like they would in enumerate, but because there is *objects they obvio
     print(1,2,3,4,5,6)
     print(1,2,3,4,5,6, sep='!', end='ok\n') # the \n is a new line so the output prints normally
 
-The final word of wisdom about function documentation is to treat it a bit like a puzzle.  If you don't quite understand
+Object documentation can be found using the `help()` function (e.g. `help(enumerate)`), or by simply googling the object
+in question. We typically find googling the function to be more effective as it's often much easier to read. The final
+word of wisdom about function documentation is to treat it a bit like a puzzle.  If you don't quite understand
 what a function does, spend some time playing with it in a console. See how it reacts to different inputs, try to break
 it, and if you still can't understand what's going on it's time to check google and stack overflow.
 

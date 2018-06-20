@@ -57,19 +57,13 @@ These exercises are facillitated through github for classroom, so we recommend t
 |             | .. toctree::                                          |
 |             |     :maxdepth: 1                                      |
 | exercise 2  |                                                       |
-|             |     string_details_formatted_output.rst               |
-|             |                                                       |
-+-------------+-------------------------------------------------------+
-|             | .. toctree::                                          |
-|             |     :maxdepth: 1                                      |
-| exercise 3  |                                                       |
 |             |     conditional_statements.rst                        |
 |             |     loops.rst                                         |
 |             |                                                       |
 +-------------+-------------------------------------------------------+
 |             | .. toctree::                                          |
 |             |     :maxdepth: 1                                      |
-| exercise 4  |                                                       |
+| exercise 3  |                                                       |
 |             |     functions.rst                                     |
 |             |                                                       |
 +-------------+-------------------------------------------------------+

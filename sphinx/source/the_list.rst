@@ -87,7 +87,7 @@ operators and keywords associated with lists and two most important functions as
 
 .. ipython:: python
 
-    # adding two lists creates a new list with all of the elements joined togeather
+    # adding two lists creates a new list with all of the elements joined together
     list1 = [1,2,3]
     list2 = [4,5,6]
     list1 + list2

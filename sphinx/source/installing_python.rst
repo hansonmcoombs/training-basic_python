@@ -80,7 +80,14 @@ Our recommended python installation for further work
 2. Create a virtual environment for your project
     1. create a .yml files from the packages you need below.
     2. open an anaconda prompt
-    3. follow the instructions :ref: `to create an environment from a .yml file <new_in_env>`
+    3. Create the environment from the ``environment.yml`` file:
+
+       .. code::
+
+          conda env create -f [environment.yml]
+
+        The first line of the ``yml`` file sets the new environment's
+        name. The ``environment.yml`` can also be the explicit path to the .yml file.
     4. enter y and press enter when prompted with 'are you sure'
 3. That's it python and spyder for your specific project should now be installed. To use python with spyder, in the start menu (under anaconda) you should see a version of spyder followed by your virtual environment's name.  Open that and get cracking!
 4. Each time you start a new project go back to 2 and create a new virtual environment.
@@ -113,23 +120,6 @@ packages that we've found to be high quality and easily usable. Rather than re-p
 which could then go out of date, we've simply included a link to the package documentation. You can of
 course :ref: `add packages <course-env>` after you've built the environment.  Just be sure to export a new environment
 file to hold in your git repository.
-
-Once you have built your enviroment file
-Use the Anaconda Prompt for the following steps.
-
-#. Create the environment from the ``environment.yml`` file:
-
-   .. code::
-
-      conda env create -f [environment.yml]
-
-The first line of the ``yml`` file sets the new environment's
-name. The ``environment.yml`` can also be the explicit path to the .yml file.
-
-
-That's it your python environment who's name is defined in the environment file is installed.  To use python with
-spyder, in the start menu (under anaconda) you should see spyder (*your_eniroment_name*).  Open that up and get cracking!
-
 
 Advanced visualisation packages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

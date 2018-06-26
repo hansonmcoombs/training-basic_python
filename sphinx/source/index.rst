@@ -63,7 +63,7 @@ These exercises are facillitated through Github Classroom, so we recommend that 
 +-------------+-------------------------------------------------------+
 |             |                                                       |
 |             |                                                       |
-| exercise 3  |       -:doc:`functions`                               |
+| exercise 3  |      - :doc:`functions`                               |
 |             |                                                       |
 |             |                                                       |
 +-------------+-------------------------------------------------------+

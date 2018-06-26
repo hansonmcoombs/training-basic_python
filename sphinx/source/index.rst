@@ -65,10 +65,10 @@ These exercises are facillitated through Github Classroom, so we recommend that 
 |             |     loops.rst                                         |
 |             |                                                       |
 +-------------+-------------------------------------------------------+
-|             | .. toctree::                                          |
-|             |     :maxdepth: 1                                      |
-| exercise 3  |                                                       |
-|             |     functions.rst                                     |
+|             |                                                       |
+|             |                                                       |
+| exercise 3  |       :ref:  'functions'                              |
+|             |                                                       |
 |             |                                                       |
 +-------------+-------------------------------------------------------+
 

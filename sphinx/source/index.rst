@@ -48,26 +48,22 @@ These exercises are facillitated through Github Classroom, so we recommend that 
 +-------------+-------------------------------------------------------+
 | exercise    | prerequisites / associated lessons                    |
 +=============+=======================================================+
-|             | .. toctree::                                          |
-|             |     :maxdepth: 1                                      |
 |             |                                                       |
-|             |     what_python.rst                                   |
-| exercise 1  |     installing_python.rst                             |
-|             |     basic_objects.rst                                 |
-|             |     the_list.rst                                      |
-|             |     dictionaries.rst                                  |
+|             |     - :doc:`what_python`                              |
+| exercise 1  |     - :doc:`installing_python`                        |
+|             |     - :doc:`basic_objects`                            |
+|             |     - :doc:`the_list`                                 |
+|             |     - :doc:`dictionaries`                             |
 |             |                                                       |
 +-------------+-------------------------------------------------------+
-|             | .. toctree::                                          |
-|             |     :maxdepth: 1                                      |
 | exercise 2  |                                                       |
-|             |     conditional_statements.rst                        |
-|             |     loops.rst                                         |
+|             |     - :doc:`conditional_statements`                   |
+|             |     - :doc:`loops`                                    |
 |             |                                                       |
 +-------------+-------------------------------------------------------+
 |             |                                                       |
 |             |                                                       |
-| exercise 3  |       :doc:`functions`                                |
+| exercise 3  |       -:doc:`functions`                               |
 |             |                                                       |
 |             |                                                       |
 +-------------+-------------------------------------------------------+

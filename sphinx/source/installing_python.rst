@@ -12,11 +12,14 @@ Python itself is rather lightweight. It contains some basic objects, and a few b
 it is quite a powerful language off the shelf.  For this course you will not need anything beyond the basic builtin
 python.
 
-There are a number of ways to install python, but the easiest and the way we are going to install it via Anaconda.
-Anaconda is a free and open source distribution of python and has been build in a way to simplify package management.
+There are a number of ways to install python, but one of the best for scientists is via Anaconda.
+`Anaconda <https://www.anaconda.com/distribution/>`_ is a free and open source distribution of data science packages for Python/R and can manage your packages, dependencies, and
+environments.
 There are two ways to install python from Anaconda either 1) simply install Anaconda, which has most of the packages
 you may need and many that you will never use or 2) install miniconda (a very light weight version) and then add
 the packages you need when you need them.
+
+Both the full Anaconda and the Miniconda installations come with the core Python installation and the conda package manager. In addition to this, the full Anaconda installation comes with 1,400+ additional packages. 
 
 For this course we recommend installing miniconda as that is all you need and we discuss this later.
 As you progress it is good experience to start
@@ -30,8 +33,8 @@ packages that are not already built into python. That said as soon as you begin 
 packages galore.
 
 In order to use packages, you have to
-install them. At the end of the day the definitive expert on how to install a given package is that's package website,
-but most packages that you will be interested in using can be easily installed with either pip or conda which is discussed below
+install them. At the end of the day, the definitive expert on how to install a given package is that's package website,
+but most packages that you will be interested in using can be easily installed with either pip or conda which is discussed below.
 
 Using python environments
 -----------------------------

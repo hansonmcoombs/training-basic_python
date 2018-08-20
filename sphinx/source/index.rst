@@ -4,7 +4,7 @@ Welcome to the Environmental Scientist's Introduction to Python Course
 
 This course is is an open source training course to give environmental scientists the foundation they need to begin learning and using
 the scientific tools that have been developed for python. The course focuses on simplifying python language into two
-buckets: **the must haves** and **the nice to haves**. The course if far from comprehensive, but we believe that it's
+buckets: **the must haves** and **the nice to haves**. The course is far from comprehensive, but we believe that it's
 better for people to get cracking, and fill in the gaps as they develop their skills.
 
     **Expected course duration: 1-2 days**
@@ -16,7 +16,6 @@ better for people to get cracking, and fill in the gaps as they develop their sk
 
     what_python.rst
     installing_python.rst
-    version_control.rst
     basic_objects.rst
     the_list.rst
     dictionaries.rst
@@ -95,10 +94,3 @@ a table of the most useful tools, what they do, and a link to some good learning
 +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 | `timeit <https://pymotw.com/3/timeit/index.html>`_                                                            |  Time the execution of small bits of Python code                                                               |
 +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-
-
-
-
-
-
-

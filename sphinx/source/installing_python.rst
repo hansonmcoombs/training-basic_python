@@ -52,6 +52,8 @@ collaboration there are a couple of advantages to working in this style:
 2. Dependencies. You don't need to worry about competing dependencies ever again, you know that your code will run.
 3. Safeguard from depreciation.  You won't need to worry about dusting off some code only to realise that it won't run because some key function was depreciated.
 
+A very detailed description and tutorial about python environments can be found on `FreeCodeCamp <https://medium.freecodecamp.org/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c>`_.
+
 
 Our recommended python installation for this course
 -----------------------------------------------------
@@ -214,7 +216,6 @@ Setting up and managing virtual environments with conda
 The instructions below on how use a conda environments are a simplified version of the instructions given `here <https://conda.io/docs/user-guide/tasks/manage-environments.html>`_.
 You can read through the instructions, but they here more as a guide if/when you need them. For instructions on how to
 create the recommended python environment for this course, please go back to :ref:`this section <course-env>`.
-And even more detailed description and tutorial about python environments can be found on `FreeCodeCamp <https://medium.freecodecamp.org/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c>'_.
 
 Use the Terminal or an Anaconda Prompt for the following steps.
 
